@@ -15,7 +15,8 @@ export const summarizeWork = createServerFn({ method: 'POST' })
   .middleware([requireSupabaseAuth])
   .inputValidator((d: unknown) => z.object({ text: z.string().trim().min(10).max(40000) }).parse(d))
   .handler(async ({ data, context }) => {
-    const { data: isAdmin } = await context.supabase.rpc('has_role', { _user_id: context.userId, _role: 'admin' });
+    const { data: isAdmin, error: roleError } = await context.supabase.rpc('has_role', { _user_id: context.userId, _role: 'admin' });
+    if (roleError) { console.error(roleError); throw new Error('تعذّر التحقق من الصلاحيات، حاولي مجددًا.'); }
     if (!isAdmin) throw new Error('هذه الميزة لمدير المشروع فقط');
     const apiKey = process.env['LOVABLE_API_KEY'];
     if (!apiKey) throw new Error('خدمة الذكاء الاصطناعي غير مهيأة');

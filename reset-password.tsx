@@ -22,15 +22,24 @@ function ResetPassword() {
   const [message, setMessage] = useState('جارٍ التحقق من رابط الاستعادة…');
   const [busy, setBusy] = useState(false);
   useEffect(() => {
-    const recovery = window.location.hash.includes('type=recovery');
+    const hash = window.location.hash;
+    const recovery = hash.includes('type=recovery');
+    let found = false;
+    const ok = () => { found = true; setReady(true); setMessage(''); };
     const { data } = supabase.auth.onAuthStateChange(event => {
-      if (event === 'PASSWORD_RECOVERY') { setReady(true); setMessage(''); }
+      if (event === 'PASSWORD_RECOVERY') ok();
     });
     void supabase.auth.getSession().then(({ data }) => {
-      if (recovery && data.session) { setReady(true); setMessage(''); }
+      if (recovery && data.session) ok();
       else if (!recovery) setMessage('افتحي رابط الاستعادة المرسل إلى بريدك الإلكتروني.');
     });
-    return () => data.subscription.unsubscribe();
+    // إصلاح: كان الرابط المنتهي أو المستخدم سابقًا يترك رسالة «جارٍ التحقق» للأبد
+    const expired = hash.includes('error=') || hash.includes('error_code=');
+    if (expired) setMessage('الرابط منتهي الصلاحية أو مستخدم سابقًا. اطلبي رابطًا جديدًا من صفحة تسجيل الدخول.');
+    const timer = setTimeout(() => {
+      if (!found && recovery) setMessage('تعذّر التحقق من الرابط. اطلبي رابط استعادة جديدًا من صفحة تسجيل الدخول.');
+    }, 8000);
+    return () => { clearTimeout(timer); data.subscription.unsubscribe(); };
   }, []);
   return <main className="min-h-dvh bg-background text-foreground flex items-center justify-center px-6">
     <form className="w-full max-w-sm space-y-5" onSubmit={async e => {

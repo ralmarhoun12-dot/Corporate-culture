@@ -1,0 +1,2290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الثقافة المؤسسية | وزارة التعليم</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<style>
+:root{
+  --moe:#247D87; --moe-deep:#164558;
+  --brand-turquoise:#299AA5; --brand-green:#37B575; --brand-accent:#238458; --brand-soft:#BFE4D2; --surface-soft:#F1F8F5; --on-dark:#F2FBF7;
+  --paper:#F6FAF9; --card:#FFFFFF; --ink:#1C2B2E; --mut:#5F7377;
+  --green:var(--moe); --deep:var(--moe-deep);
+  --gold:var(--brand-accent); --gold2:var(--brand-soft);
+  --line:#D7E8E3; --rose:#C05C78; --red:#B7473D; --blue:#3E7CB1; --teal:#2F7D74;
+  --sh:0 14px 34px rgba(20,60,66,.10);
+  --pat:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23299AA5' stroke-opacity='.055'%3E%3Crect x='42' y='42' width='36' height='36'/%3E%3Crect x='42' y='42' width='36' height='36' transform='rotate(45 60 60)'/%3E%3Ccircle cx='60' cy='60' r='2.5'/%3E%3C/g%3E%3C/svg%3E");
+  --patl:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='130' height='130' viewBox='0 0 130 130'%3E%3Cg fill='none' stroke='%2337B575' stroke-opacity='.10'%3E%3Crect x='45' y='45' width='40' height='40'/%3E%3Crect x='45' y='45' width='40' height='40' transform='rotate(45 65 65)'/%3E%3Ccircle cx='65' cy='65' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans Arabic',sans-serif;background-color:var(--paper);background-image:var(--pat);color:var(--ink);line-height:1.95;font-size:15px}
+::selection{background:var(--gold2);color:var(--deep)}
+::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-thumb{background:#BFC9C6;border-radius:99px}::-webkit-scrollbar-track{background:var(--surface-soft)}
+.hidden{display:none!important}
+.admin-only{display:none!important}
+body.is-admin .admin-only{display:inline-flex!important}
+.lucide{width:18px;height:18px;stroke-width:1.8}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+.ltr{direction:ltr;text-align:left}
+button{font-family:inherit}
+.moelogo{display:block;object-fit:contain;flex-shrink:0;max-width:100%;image-rendering:auto}
+.foot .moelogo{width:95px;height:70px;margin:0 auto 12px}
+.btn{background:var(--green);color:#F5FBF9;border:1px solid var(--green);padding:10px 20px;border-radius:12px;font-weight:600;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:.2s}
+.btn:hover{background:var(--deep);transform:translateY(-1px)}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.btn .lucide{width:16px;height:16px}
+.btn-line{background:transparent;color:var(--green);border:1px solid rgba(36,125,135,.35);padding:10px 20px;border-radius:12px;font-weight:600;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:.2s;text-decoration:none}
+.btn-line:hover{background:rgba(36,125,135,.07)}
+.btn-line .lucide{width:16px;height:16px}
+.ibtn{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--mut);display:grid;place-items:center;cursor:pointer;transition:.2s;flex-shrink:0}
+.ibtn:hover{color:var(--ink);border-color:var(--gold2)}
+.lasthint{background:var(--surface-soft);border:1px solid var(--gold2);color:var(--brand-accent);border-radius:12px;padding:9px 14px;font-size:12.5px;margin-bottom:14px;text-align:center;line-height:1.9}
+.lasthint b{color:var(--deep)}
+.pchip{display:inline-block;background:#E3F1F2;border:1px solid #BFDDE0;color:var(--deep);border-radius:999px;font-size:10.5px;font-weight:700;padding:1px 9px;margin-top:2px}
+
+.authwrap{min-height:100vh;display:grid;grid-template-columns:1.05fr 1fr}
+.auth-brand{background:var(--deep);color:var(--on-dark);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:60px;position:relative;overflow:hidden}
+.auth-brand::before{content:'';position:absolute;inset:0;background-image:var(--patl);background-size:130px;pointer-events:none}
+.auth-brand>*{position:relative}
+.auth-brand .moelogo{width:95px;height:70px;margin-bottom:18px}
+.auth-brand .ak{color:var(--gold2);font-size:13px;font-weight:700;letter-spacing:1px}
+.auth-brand h1{font-family:'Aref Ruqaa',serif;font-size:clamp(44px,5.5vw,70px);line-height:1.25;margin:8px 0}
+.auth-brand p{color:#CFDCDA;max-width:440px;font-size:15px}
+.auth-brand .aq{margin-top:36px;font-family:'Aref Ruqaa',serif;color:var(--gold2);font-size:19px;border-right:2px solid var(--gold);padding-right:14px}
+.auth-med{position:absolute;bottom:-70px;left:-70px;width:300px;opacity:.35;animation:spin 80s linear infinite;pointer-events:none}
+.auth-side{display:flex;align-items:center;justify-content:center;padding:40px 26px}
+.auth-card{width:min(430px,100%);background:var(--card);border:1px solid var(--line);border-radius:20px;padding:34px;box-shadow:var(--sh)}
+.auth-card h2{font-family:'Aref Ruqaa',serif;color:var(--deep);font-size:26px;margin-bottom:4px}
+.auth-card .as{font-size:13px;color:var(--mut);margin-bottom:20px}
+.tabs{display:flex;background:var(--surface-soft);border-radius:12px;padding:4px;margin-bottom:22px}
+.tab{flex:1;text-align:center;padding:9px;border-radius:9px;font-size:13.5px;font-weight:700;color:var(--mut);cursor:pointer;border:none;background:transparent;transition:.2s}
+.tab.on{background:var(--green);color:#F5FBF9}
+.aen{font-size:11px;color:var(--mut);margin-top:4px}
+.saverow{display:flex;align-items:center;gap:8px;margin:2px 0 12px;font-size:12.5px;color:var(--mut);cursor:pointer;user-select:none}
+.saverow input{width:auto;accent-color:var(--green)}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:6px}
+input,select,textarea{width:100%;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 13px;font:inherit;font-size:14px;color:var(--ink);transition:border .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(36,125,135,.12)}
+textarea{resize:vertical}
+.ferr{color:var(--red);font-size:12.5px;min-height:20px;display:block;margin-top:4px}
+
+#topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.tbin{display:flex;align-items:center;gap:16px;padding:10px 26px;max-width:1400px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.brand .moelogo{width:76px;height:56px}
+.brand b{font-family:'Aref Ruqaa',serif;font-size:21px;color:var(--deep);font-weight:700;white-space:nowrap;line-height:1.2}
+.bsub{display:block;font-size:10px;color:var(--gold);font-weight:700;letter-spacing:1px;line-height:1.4}
+.mainnav{display:flex;gap:2px;overflow-x:auto;flex:1;scrollbar-width:none}
+.mainnav::-webkit-scrollbar{display:none}
+.mainnav a{padding:7px 11px;font-size:13px;color:var(--mut);border-radius:8px;white-space:nowrap;text-decoration:none;transition:.15s}
+.mainnav a:hover{color:var(--green);background:rgba(36,125,135,.07)}
+.uchip{display:flex;align-items:center;gap:9px;flex-shrink:0}
+.avatar{width:36px;height:36px;border-radius:50%;background:var(--green);color:var(--on-dark);display:grid;place-items:center;font-family:'Aref Ruqaa',serif;font-size:19px}
+.uchip .un{line-height:1.3}
+.uchip .un b{display:block;font-size:13px;color:var(--deep)}
+.uchip .un span{font-size:11px;color:var(--gold);font-weight:700}
+
+.hero{padding:84px 0 56px;position:relative}
+.kick{display:inline-flex;gap:8px;align-items:center;color:var(--gold);font-size:13px;font-weight:700;letter-spacing:.5px}
+.kick::before{content:'';width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+.hero-t{font-family:'Aref Ruqaa',serif;font-size:clamp(46px,7.5vw,86px);color:var(--deep);line-height:1.2;margin:12px 0 4px;font-weight:700}
+.hero-s{font-size:clamp(17px,2.4vw,21px);color:var(--green);font-weight:600}
+.hero-p{max-width:680px;color:var(--mut);margin-top:20px;font-size:15.5px;white-space:pre-line}
+.hero-med{position:absolute;left:1%;top:60px;width:310px;opacity:.5;animation:spin 75s linear infinite;pointer-events:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hstrip{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;margin-top:36px;padding-top:24px;border-top:1px dashed var(--line)}
+.hstrip>div{display:flex;align-items:baseline;gap:9px}
+.hstrip b{font-family:'Aref Ruqaa',serif;font-size:34px;color:var(--gold);line-height:1}
+.hstrip span{font-size:13.5px;color:var(--mut)}
+.dia{width:7px;height:7px;background:var(--gold2);transform:rotate(45deg);flex-shrink:0}
+.hero-cta{margin-top:30px}
+.sec{padding:66px 0 10px;scroll-margin-top:86px}
+.shead{display:flex;align-items:center;gap:20px;margin-bottom:28px}
+.snum{width:56px;height:56px;border:1px solid var(--gold2);transform:rotate(45deg);display:grid;place-items:center;background:var(--card);box-shadow:var(--sh);flex-shrink:0}
+.snum span{transform:rotate(-45deg);font-family:'Aref Ruqaa',serif;font-size:25px;color:var(--gold)}
+.skick{font-size:11.5px;color:var(--gold);font-weight:700;letter-spacing:1px}
+.shead h2{font-family:'Aref Ruqaa',serif;font-size:clamp(27px,4vw,38px);color:var(--deep);line-height:1.3;font-weight:700}
+.sline{flex:1;height:1px;background:var(--line);min-width:30px}
+.sublead{color:var(--mut);font-size:14px;max-width:680px;margin:-10px 0 26px}
+
+.wpanel{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:44px 34px 30px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.wpanel::before{content:'';position:absolute;inset:0;background-image:var(--pat);background-size:110px;pointer-events:none}
+.wpanel>*{position:relative}
+.wkick{text-align:center;color:var(--gold);font-size:12.5px;font-weight:700;letter-spacing:1px}
+.wtitle{font-family:'Aref Ruqaa',serif;font-size:clamp(34px,5vw,46px);color:var(--green);text-align:center;line-height:1.4}
+.wtext{text-align:center;max-width:640px;margin:16px auto 0;color:var(--mut);font-size:14.5px}
+.wnames{display:flex;justify-content:center;align-items:flex-start;gap:26px;flex-wrap:wrap;margin:34px 0 8px}
+.nameplate{background:var(--surface-soft);border:1px solid var(--line);border-top:3px solid var(--gold);padding:24px 28px 18px;min-width:212px;text-align:center;box-shadow:0 8px 18px rgba(20,60,66,.08);transform:rotate(var(--rt)) translateY(var(--ty));transition:.25s}
+.nameplate:hover{transform:rotate(0deg) translateY(-5px)}
+.np-name{font-family:'Aref Ruqaa',serif;font-size:24px;color:var(--deep)}
+.np-sub{font-size:11.5px;color:var(--mut);margin-top:4px}
+.np-dia{width:8px;height:8px;background:var(--gold2);transform:rotate(45deg);margin:0 auto 10px;display:block}
+.wclose{text-align:center;font-family:'Aref Ruqaa',serif;font-size:clamp(17px,2.5vw,21px);color:var(--green);margin-top:20px}
+.weditwrap{text-align:center;margin-top:18px}
+
+.plqs{display:flex;flex-wrap:wrap;gap:36px 26px;justify-content:center;padding-top:30px}
+.plaque{position:relative;width:206px;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:28px 18px 20px;text-align:center;cursor:pointer;box-shadow:var(--sh);transform:rotate(var(--rt)) translateY(var(--ty));transition:transform .3s,box-shadow .3s}
+.plaque::after{content:'';position:absolute;inset:7px;border:1px solid var(--line);border-radius:4px;pointer-events:none}
+.plaque:hover{transform:rotate(0deg) translateY(calc(var(--ty) - 7px));box-shadow:0 22px 44px rgba(20,60,66,.15)}
+.str{position:absolute;top:-17px;width:1px;height:19px;background:rgba(35,132,88,.65);left:50%}
+.str.s1{transform:rotate(17deg);transform-origin:bottom}
+.str.s2{transform:rotate(-17deg);transform-origin:bottom}
+.nail{position:absolute;top:-20px;left:50%;transform:translateX(-50%);width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.plq-icon{width:46px;height:46px;margin:0 auto 12px;border:1px solid var(--gold2);border-radius:50%;display:grid;place-items:center;color:var(--gold);background:var(--surface-soft)}
+.plq-icon .lucide{width:20px;height:20px}
+.plq-t{font-family:'Aref Ruqaa',serif;font-size:22px;color:var(--deep);line-height:1.3}
+.plq-q{font-size:12.5px;color:var(--mut);margin:6px 0 12px;min-height:48px;line-height:1.7}
+.plq-c{font-size:11.5px;color:var(--gold);font-weight:700}
+.plq-go{margin-top:10px;font-size:12.5px;font-weight:700;color:var(--green);display:inline-flex;align-items:center;gap:6px}
+.plaque.feat{background:var(--deep);border-color:var(--deep)}
+.plaque.feat::after{border-color:rgba(255,255,255,.14)}
+.plaque.feat .plq-t{color:var(--on-dark)}
+.plaque.feat .plq-q{color:#C2DEE0}
+.plaque.feat .plq-icon{border-color:rgba(191,228,210,.5);color:var(--gold2);background:transparent}
+.plaque.feat .plq-c{color:var(--gold2)}
+.plaque.feat .plq-go{color:var(--on-dark)}
+.chint{text-align:center;font-size:12.5px;color:var(--mut);margin-top:24px}
+
+.ovl{position:fixed;inset:0;background:rgba(7,60,68,.55);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;z-index:100;padding:20px}
+.modal{position:relative;width:min(680px,100%);max-height:88vh;overflow:auto;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:34px 36px 28px;box-shadow:0 30px 80px rgba(0,0,0,.35);animation:pop .3s cubic-bezier(.2,.9,.3,1.15)}
+@keyframes pop{from{opacity:0;transform:scale(.94) translateY(10px)}}
+.mclose{position:absolute;top:14px;left:14px}
+.morn{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.morn::before,.morn::after{content:'';flex:1;height:1px;background:var(--gold2)}
+.morn i{width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+.mkick{font-size:11.5px;color:var(--gold);font-weight:700;letter-spacing:1.5px;text-align:center}
+.mtitle{font-family:'Aref Ruqaa',serif;font-size:31px;color:var(--deep);text-align:center;margin:2px 0 8px;line-height:1.3}
+.mquote{text-align:center;font-family:'Aref Ruqaa',serif;font-size:19px;color:var(--green);margin-bottom:14px}
+.mbody{font-size:14px;color:var(--mut);white-space:pre-line;margin-bottom:18px;border-right:3px solid var(--gold2);padding-right:12px}
+.mrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:12px;flex-wrap:wrap}
+.mrow .ferr{flex:1;min-height:0;margin:0}
+.donew{text-align:center;padding:16px 0 6px}
+.dochk{width:56px;height:56px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;margin:0 auto 14px}
+.donew h4{font-family:'Aref Ruqaa',serif;font-size:24px;color:var(--deep);margin-bottom:6px}
+.donew p{color:var(--mut);font-size:13.5px;margin-bottom:18px}
+.donew>div{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+
+.attbar{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 10px}
+.attbtn{background:transparent;color:var(--green);border:1px solid rgba(36,125,135,.35);padding:8px 14px;border-radius:10px;font-weight:600;font-size:12.5px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:.2s}
+.attbtn:hover{background:rgba(36,125,135,.07)}
+.attbtn .lucide{width:15px;height:15px}
+#btnRecStop{display:none}
+.attbar.recording #btnRecStop{display:inline-flex;background:var(--red);color:#fff;border-color:var(--red)}
+.attbar.recording #btnRec{display:none}
+.atchips{display:flex;flex-direction:column;gap:8px;margin-bottom:10px}
+.atchip{display:flex;align-items:center;gap:10px;background:var(--surface-soft);border:1px solid var(--line);border-radius:10px;padding:7px 10px;font-size:12px}
+.atchip img{width:42px;height:42px;object-fit:cover;border-radius:8px}
+.atchip .an{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.atchip .an b{color:var(--deep)}
+.atchip .as{color:var(--mut);font-size:11px}
+.recbox{display:none;align-items:center;gap:10px;background:#F8ECEC;border:1px solid #E3C1C1;border-radius:10px;padding:8px 12px;font-size:13px;margin-bottom:10px}
+.recbox.on{display:inline-flex}
+.recdot{width:10px;height:10px;border-radius:50%;background:var(--red);animation:blink 1s infinite}
+@keyframes blink{50%{opacity:.25}}
+#attBody figure{margin:0 0 12px}
+#attBody figure img{width:100%;max-height:280px;object-fit:cover;border-radius:12px;border:1px solid var(--line);cursor:zoom-in;transition:.2s}
+#attBody figure img.big{position:fixed;inset:0;margin:auto;width:auto;max-width:92vw;max-height:86vh;object-fit:contain;z-index:300;cursor:zoom-out;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.5);padding:8px}
+#attBody figcaption{font-size:11.5px;color:var(--mut);margin-top:5px;text-align:center}
+.attaudio,.attfile{background:var(--surface-soft);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.attname{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--deep);margin-bottom:6px}
+.attname .lucide{width:16px;height:16px;color:var(--gold)}
+.attfile{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.attfile span{flex:1;font-size:13px;color:var(--deep);min-width:150px}
+audio{width:100%;height:38px}
+
+/* رفاه — بطاقات السلاسل */
+.pzcards{display:grid;grid-template-columns:1fr;gap:20px;max-width:760px;margin:0 auto}
+.pzcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:10px;transition:.2s}
+.pzcard:hover{transform:translateY(-3px);box-shadow:0 20px 40px rgba(20,60,66,.14)}
+.pzc-h{display:flex;align-items:center;gap:12px}
+.b-ic{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;flex-shrink:0;background:#fff;border:1px solid var(--line);color:var(--green)}
+.pzcard h3{font-family:'Aref Ruqaa',serif;font-size:20px;color:var(--deep);line-height:1.35}
+.btag{font-size:11px;color:var(--gold);font-weight:700;letter-spacing:.5px}
+.datechip{display:inline-block;background:var(--deep);color:var(--on-dark);font-size:12px;font-weight:700;padding:4px 13px;border-radius:999px;align-self:flex-start}
+.pzdesc{font-size:12.5px;color:var(--mut);line-height:1.8}
+.acc-red .b-ic{color:var(--red)}.acc-red .datechip{background:var(--red)}
+.acc-teal .b-ic{color:var(--teal)}.acc-teal .datechip{background:var(--teal)}
+.acc-blue .b-ic{color:var(--blue)}.acc-blue .datechip{background:var(--blue)}
+.acc-rose .b-ic{color:var(--rose)}.acc-rose .datechip{background:var(--rose)}
+.acc-gold .b-ic{color:var(--gold)}.acc-gold .datechip{background:var(--gold)}
+/* معاينة السلسلة — لوحة مركبة كاملة كصورة واحدة */
+.pzmini{display:flex;justify-content:center;padding:14px 0 4px;filter:drop-shadow(0 8px 14px rgba(20,60,66,.15))}
+.pzmini svg{width:100%;max-width:675px;height:auto;overflow:visible}
+.pzchain{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:4px}
+.pzchain span{background:var(--surface-soft);border:1px solid var(--gold2);color:var(--brand-accent);font-size:11px;font-weight:700;border-radius:999px;padding:3px 11px}
+.pzfoot{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:6px}
+.pzdonechip{display:none;align-items:center;gap:6px;font-size:11.5px;font-weight:700;color:var(--green);background:#E3F1F2;border:1px solid #BFDDE0;border-radius:999px;padding:4px 12px}
+.pzdonechip .lucide{width:13px;height:13px}
+
+/* ══ نافذة اللعبة — سلسلة ٥ قطع، النص داخل SVG في المنتصف ══ */
+.pzmodal{width:min(900px,100%);padding:28px 24px 24px}
+.pzstats{display:flex;gap:10px;justify-content:center;margin:10px 0 8px;flex-wrap:wrap}
+.stat-c{flex:1;max-width:130px;background:var(--surface-soft);border:1px solid var(--line);border-radius:12px;padding:7px 6px;text-align:center}
+.stat-c b{display:block;font-family:'Aref Ruqaa',serif;font-size:20px;color:var(--deep);line-height:1.25}
+.stat-c span{font-size:11px;color:var(--mut);font-weight:700}
+.pzacts{display:flex;gap:8px;justify-content:center;align-items:center;margin:0 0 14px;flex-wrap:wrap}
+.pzacts .btn-line{padding:6px 13px;font-size:12px}
+.pzacts .btn-line .lucide{width:13px;height:13px}
+.vchip{border:1px solid var(--line);border-radius:999px;padding:3px 11px;font-size:11px;color:var(--mut);font-weight:700;background:#fff}
+#pzFitH{position:relative;overflow:visible}
+#pzFit{width:880px;margin:0 auto;transform-origin:top center;display:flex;flex-direction:column;gap:14px}
+/* السلسلة الأفقية — القطعة ١ أقصى اليمين */
+.pzboard{display:flex;justify-content:center;position:relative;filter:drop-shadow(0 14px 24px rgba(20,60,66,.18))}
+.pzslot{width:135px;height:190px;position:relative;flex-shrink:0}
+.pzslot svg{position:absolute;left:-36px;top:-36px;width:207px;height:262px;overflow:visible;pointer-events:none}
+.pzslot svg path{fill:#F1EFE7;stroke:#C9C4B4;stroke-width:1.4;stroke-dasharray:5 4}
+.pzslot .slotnum{position:absolute;top:6px;inset-inline-start:8px;pointer-events:none;z-index:2}
+.pzslot .slotnum b{width:21px;height:21px;border-radius:50%;border:1.5px dashed #C4BFAE;color:#B9B4A2;display:grid;place-items:center;font-size:10.5px;font-weight:700;font-family:'IBM Plex Sans Arabic',sans-serif}
+.pzslot.over svg path{fill:#E4F0F1;stroke:var(--green)}
+.pzslot.sel svg path{fill:#E4F0F1;stroke:var(--green)}
+.pzslot.filled .slotnum{display:none}
+.pzslot.shake{animation:shake .35s}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.pztray{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;background:#F1EFE7;border:1px dashed #C9C4B4;border-radius:14px;padding:16px 12px;min-height:120px}
+.tc{width:135px;height:190px;position:relative}
+.tc:empty::before{content:'';position:absolute;inset:8px;border:1.5px dashed #CFC9B8;border-radius:10px}
+.tc:empty::after{content:attr(data-n);position:absolute;inset:0;display:grid;place-items:center;font-size:11.5px;font-weight:700;color:#C9C4B4;font-family:'IBM Plex Sans Arabic',sans-serif}
+.pzc{width:135px;height:190px;position:absolute;inset:0;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+.pzc svg{position:absolute;left:-36px;top:-36px;width:207px;height:262px;overflow:visible;pointer-events:none;filter:drop-shadow(0 5px 10px rgba(20,60,66,.22));transition:transform .15s}
+.pzc svg path{stroke:rgba(0,0,0,.14);stroke-width:1.3}
+.pzc:hover svg{transform:scale(1.03)}
+.pzc.sel svg path{stroke:var(--green);stroke-width:2}
+.pzc.locked{cursor:default}
+.pzc.locked svg{filter:none}
+.pzc.locked:hover svg{transform:none}
+.pzc.drag{position:fixed;z-index:500;pointer-events:none;cursor:grabbing;inset:auto}
+.pzc.drag svg{filter:drop-shadow(0 14px 26px rgba(0,0,0,.35));transform:none}
+.pzc.drag:hover svg{transform:none}
+/* بطاقة المعلومة الجانبية */
+.pzinfo{background:var(--card);border:1px solid var(--line);border-right:4px solid var(--gold);border-radius:14px;padding:12px 18px;margin-top:10px;min-height:78px;box-shadow:var(--sh)}
+.pzinfo .hd{display:flex;align-items:center;gap:9px;margin-bottom:3px}
+.pzinfo .hd .n{width:25px;height:25px;border-radius:50%;background:var(--deep);color:var(--on-dark);display:grid;place-items:center;font-size:12px;font-weight:700;flex-shrink:0;font-family:'IBM Plex Sans Arabic',sans-serif}
+.pzinfo .hd .t{font-weight:700;color:var(--deep);font-size:13.5px}
+.pzinfo .rows .r{font-size:12.5px;color:#2A4A50;line-height:1.8}
+.pzinfo .rows .r b{color:var(--moe);font-weight:700}
+.pzinfo.pulse{animation:pop .25s}
+.pzcdbox{margin:4px auto 2px;max-width:420px}
+.pzhint{text-align:center;font-size:11.5px;color:var(--mut);margin-top:10px}
+
+.cdb{display:flex;gap:7px;margin-top:9px;flex-wrap:wrap;justify-content:center}
+.cdb .u{background:rgba(255,255,255,.8);border:1px solid var(--line);border-radius:9px;padding:4px 10px;min-width:54px;text-align:center}
+.cdb .u b{display:block;font-family:'Aref Ruqaa',serif;font-size:17px;color:var(--deep);line-height:1.15}
+.cdb .u span{font-size:9.5px;color:var(--mut);font-weight:700}
+.cdwhen{font-size:12.5px;color:var(--deep);margin-top:8px;text-align:center}
+.cdwhen b{color:var(--gold)}
+.cdtoday{margin-top:8px;font-size:13px;font-weight:700;color:var(--gold);text-align:center}
+
+.reel{background:var(--deep);border-radius:22px;padding:26px 28px 22px;color:var(--on-dark);box-shadow:var(--sh);position:relative;overflow:hidden}
+.reel::before{content:'';position:absolute;inset:0;background-image:var(--patl);background-size:130px;pointer-events:none}
+.reel>*{position:relative}
+.reel-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.rkick{font-size:11px;letter-spacing:1.5px;color:var(--gold2);font-weight:700}
+.reel h3{font-family:'Aref Ruqaa',serif;font-size:clamp(21px,3vw,27px);line-height:1.4}
+.rctrl{display:flex;gap:8px}
+.rcbtn{width:38px;height:38px;border-radius:50%;border:1px solid rgba(243,238,220,.25);background:transparent;color:var(--on-dark);display:grid;place-items:center;cursor:pointer;transition:.2s}
+.rcbtn:hover{background:rgba(243,238,220,.12)}
+.rstage{min-height:220px;padding:18px 6px 8px;transition:opacity .26s,transform .26s;position:relative}
+.rstage.fade{opacity:0;transform:translateY(8px)}
+.ricon{position:absolute;left:6px;top:14px;width:54px;height:54px;border:1px solid rgba(191,228,210,.4);border-radius:50%;display:grid;place-items:center;color:var(--gold2)}
+.ricon .lucide{width:24px;height:24px}
+.rdate{display:inline-block;border:1px solid var(--gold2);color:var(--gold2);font-size:12.5px;font-weight:700;padding:4px 15px;border-radius:999px;margin-bottom:12px}
+.rname{font-family:'Aref Ruqaa',serif;font-size:clamp(25px,4vw,37px);margin-bottom:6px;line-height:1.35}
+.rdef{max-width:620px;color:#E0E9E5;font-size:14.5px}
+.reel .cdb .u{background:rgba(243,238,220,.08);border-color:rgba(243,238,220,.18)}
+.reel .cdb .u b{color:var(--on-dark)}
+.reel .cdb .u span{color:#C9D6D0}
+.reel .cdwhen{color:#E9EDE2}.reel .cdwhen b{color:var(--gold2)}
+.rnote{margin-top:12px;display:inline-flex;gap:9px;align-items:flex-start;background:rgba(243,238,220,.09);border:1px solid rgba(243,238,220,.18);color:var(--on-dark);border-radius:10px;padding:9px 14px;font-size:12.5px;line-height:1.7}
+.rnote .lucide{width:15px;height:15px;flex-shrink:0;margin-top:6px;color:var(--gold2)}
+.rsegs{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:16px}
+.seg{height:5px;border-radius:99px;background:rgba(243,238,220,.16);cursor:pointer;position:relative;overflow:hidden}
+.seg i{position:absolute;inset:0;width:0;background:var(--gold2);border-radius:99px}
+
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px}
+.vid{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--sh)}
+.vid .vh{padding:14px 16px 12px}
+.vid h4{font-family:'Aref Ruqaa',serif;font-size:17px;color:var(--deep);line-height:1.4}
+.vdrow{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:2px}
+.vd{font-size:11px;color:var(--gold);font-weight:700}
+.vext{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;color:var(--green);border:1px solid var(--line);background:#fff;flex-shrink:0;transition:.2s}
+.vext:hover{background:#E3F1F2}
+.vext .lucide{width:13px;height:13px}
+.vbox{aspect-ratio:16/9;background:#07414A;position:relative}
+.vbox iframe,.vbox video{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.vph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#8CB9BE;font-size:12px}
+.vph .lucide{width:26px;height:26px}
+.vplay{position:absolute;inset:0;cursor:pointer;background:#07414A}
+.vplay img{width:100%;height:100%;object-fit:cover;opacity:.85;transition:.25s;display:block}
+.vplay:hover img{opacity:1}
+.vplaybtn{position:absolute;inset:0;margin:auto;width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.94);color:var(--moe-deep);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.35);transition:.2s}
+.vplay:hover .vplaybtn{transform:scale(1.1)}
+.vplaybtn .lucide{width:24px;height:24px;margin-right:-3px}
+.vrow2{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--sh)}
+.panel h3{font-family:'Aref Ruqaa',serif;font-size:24px;color:var(--deep);margin-bottom:10px;line-height:1.4}
+.panel .ptext{color:var(--mut);font-size:14px;white-space:pre-line}
+.pnote{margin-top:16px;background:#E3F1F2;border:1px solid #BFDDE0;color:var(--deep);font-size:12.5px;border-radius:10px;padding:10px 14px;display:flex;gap:9px;line-height:1.7}
+.pnote .lucide{width:15px;height:15px;flex-shrink:0;margin-top:6px;color:var(--green)}
+.radio-row{display:flex;gap:18px;flex-wrap:wrap}
+.radio-row label{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:500;cursor:pointer;margin:0}
+.radio-row input{width:auto}
+.bcane{display:flex;align-items:center;gap:18px;background:var(--surface-soft);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-top:16px}
+.bcane svg{width:30px;height:78px;flex-shrink:0}
+.bcane p{font-size:12.5px;color:var(--mut)}
+
+.m4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}
+.mini{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--sh)}
+.mini .mi{width:38px;height:38px;border-radius:50%;background:#E3F1F2;color:var(--green);display:grid;place-items:center;margin-bottom:10px}
+.mini h5{font-family:'Aref Ruqaa',serif;font-size:16px;color:var(--deep);margin-bottom:4px}
+.mini p{font-size:12px;color:var(--mut);line-height:1.8}
+.rkz{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.rkz span{border:1px solid var(--gold2);color:var(--brand-accent);background:var(--surface-soft);font-size:12px;font-weight:600;padding:6px 14px;border-radius:999px}
+
+.quiz{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--sh);margin-bottom:24px}
+.qwho{display:inline-block;background:var(--deep);color:var(--on-dark);font-size:12px;font-weight:700;border-radius:999px;padding:5px 16px;margin-bottom:14px}
+.qtext{font-size:14.5px;color:var(--ink);margin-bottom:18px;white-space:pre-line}
+.opt{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:right;background:var(--surface-soft);border:1px solid var(--line);border-radius:12px;padding:13px 15px;cursor:pointer;font-size:13.5px;color:var(--ink);transition:.2s;margin-bottom:10px;line-height:1.8}
+.opt .let{width:28px;height:28px;flex-shrink:0;border-radius:50%;border:1px solid var(--gold2);display:grid;place-items:center;font-size:13px;color:var(--gold);background:var(--card);font-weight:700}
+.opt:hover{border-color:rgba(36,125,135,.45)}
+.opt.sel{border-color:var(--green);background:#E3F1F2;box-shadow:0 0 0 3px rgba(36,125,135,.10)}
+.opt.sel .let{background:var(--green);color:#fff;border-color:var(--green)}
+.qact{display:flex;justify-content:flex-end;align-items:center;gap:12px;margin-top:6px}
+.qres{border-radius:12px;padding:14px 18px;font-size:13.5px;margin-top:10px;line-height:1.9}
+.qres.ok{background:#E3F1F2;border:1px solid #B7D8DB;color:var(--deep)}
+.qres.no{background:#F8ECEC;border:1px solid #E3C1C1;color:#7C2F2F}
+.qnote{display:block;margin-top:6px;font-size:11.5px;opacity:.75}
+
+.close-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:22px;align-items:start}
+.letter{border-right:3px solid var(--gold)}
+.sig{font-family:'Aref Ruqaa',serif;font-size:21px;color:var(--gold);margin-top:18px;line-height:1.5}
+.sig small{display:block;font-family:'IBM Plex Sans Arabic',sans-serif;font-size:12px;color:var(--mut)}
+.foot{margin-top:74px;border-top:1px solid var(--line);padding:28px 0 44px;text-align:center;color:var(--mut);font-size:12.5px;line-height:2.1}
+.foot b{color:var(--deep)}
+
+.abar{background:var(--deep);color:var(--on-dark);padding:26px 0}
+.abar .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.abar h2{font-family:'Aref Ruqaa',serif;font-size:30px;line-height:1.3}
+.asub{font-size:12.5px;color:#C7D6D4;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.abtns{display:flex;gap:8px;flex-wrap:wrap}
+.abtn{border:1px solid rgba(243,238,220,.3);background:transparent;color:var(--on-dark);padding:9px 16px;border-radius:11px;font-weight:600;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:.2s;position:relative}
+.abtn:hover{background:rgba(243,238,220,.12)}
+.abtn.primary{background:var(--gold);border-color:var(--gold);color:#fff}
+.abtn.primary:hover{background:var(--brand-accent)}
+.abtn .lucide{width:15px;height:15px}
+.abtn.danger{color:#F0C9C4;border-color:rgba(240,201,196,.35)}
+.abtn.danger:hover,.abtn.danger.arm{background:var(--red);border-color:var(--red);color:#fff}
+.afile input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.cchip{display:inline-flex;gap:7px;align-items:center;font-size:11.5px;font-weight:700;padding:4px 12px;border-radius:999px;border:1px solid}
+.cchip.on{color:#BFE8D0;border-color:rgba(191,232,208,.4);background:rgba(191,232,208,.08)}
+.cchip.off{color:#F0D9A8;border-color:rgba(240,217,168,.4);background:rgba(240,217,168,.08)}
+.astats{display:flex;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:16px;margin:-26px auto 28px;position:relative;box-shadow:var(--sh);overflow:hidden;max-width:1180px}
+.stat{flex:1;min-width:170px;padding:20px 26px;border-left:1px solid var(--line)}
+.stat:last-child{border-left:none}
+.stat b{font-family:'Aref Ruqaa',serif;font-size:32px;color:var(--green);display:block;line-height:1.2}
+.stat span{font-size:12px;color:var(--mut)}
+.agrid{display:grid;grid-template-columns:330px 1fr;gap:22px;align-items:start;padding-bottom:60px}
+.apanel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--sh);margin-bottom:20px}
+.apanel h4{font-family:'Aref Ruqaa',serif;font-size:18px;color:var(--deep);margin-bottom:8px}
+.urow{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 2px;border-top:1px dashed var(--line);cursor:pointer;transition:.15s}
+.urow:hover .tname{color:var(--green)}
+.tname{font-weight:700;color:var(--deep);font-size:13px}
+.tuser{font-size:11px;color:var(--mut);line-height:1.9}
+.uc{font-size:11px;color:var(--gold);font-weight:700;white-space:nowrap;background:var(--surface-soft);border:1px solid var(--gold2);border-radius:999px;padding:2px 10px}
+.kb{display:grid;grid-template-columns:150px 1fr 34px;gap:9px;align-items:center;font-size:11.5px;padding:6px 0}
+.kbl{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
+.track{height:8px;background:var(--surface-soft);border-radius:99px;overflow:hidden}
+.track i{display:block;height:100%;background:var(--green);border-radius:99px;transition:width .5s}
+.kb b{color:var(--gold);font-size:12px;text-align:left}
+.anote{font-size:11.5px;color:var(--mut);margin-top:14px;line-height:1.9;border-top:1px dashed var(--line);padding-top:12px}
+.guide{background:var(--surface-soft);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:12px;line-height:2.1;color:var(--ink)}
+.guide summary{cursor:pointer;font-weight:700;color:var(--green)}
+.guide ol{padding-right:18px;margin-top:6px}
+.afilters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.afilters select,.afilters input{width:auto;min-width:150px;padding:9px 12px;font-size:13px}
+.acount{font-size:12px;color:var(--mut);margin-right:auto}
+.tblwrap{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:auto;box-shadow:var(--sh)}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:900px}
+th{text-align:right;font-size:11.5px;color:var(--mut);font-weight:700;padding:13px 15px;border-bottom:1px solid var(--line);background:var(--surface-soft);white-space:nowrap}
+td{padding:13px 15px;border-bottom:1px solid #EFEDE6;vertical-align:top}
+tr:last-child td{border-bottom:none}
+td.txt{max-width:340px;line-height:1.8}
+.muttd{color:var(--mut);font-size:12px}
+.tchip{font-size:11px;background:#E3F1F2;color:var(--green);border:1px solid #BFDDE0;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.good{color:var(--deep);font-weight:700;font-size:11.5px}
+.bad{color:var(--red);font-weight:700;font-size:11.5px}
+.del{border:none;background:none;color:rgba(183,71,61,.6);cursor:pointer;font-size:11.5px;padding:3px 9px;border-radius:7px;transition:.15s}
+.del:hover{background:#F8ECEC;color:var(--red)}
+.del.arm{background:var(--red);color:#fff}
+.del.view{color:var(--green)}
+.del.view:hover{background:#E3F1F2}
+.aempty{text-align:center;color:var(--mut);padding:40px;font-size:14px}
+.rc-line{display:flex;gap:10px;padding:10px 0;border-top:1px dashed var(--line);font-size:13.5px;line-height:1.9}
+.rc-line:first-of-type{border-top:none}
+.rc-line b{color:var(--deep);min-width:88px;flex-shrink:0}
+.rc-line span{flex:1}
+.rcbtns{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+#toast{position:fixed;bottom:26px;right:50%;transform:translateX(50%) translateY(24px);background:var(--deep);color:var(--on-dark);padding:12px 26px;border-radius:999px;font-size:13.5px;opacity:0;pointer-events:none;transition:.3s;z-index:400;box-shadow:0 12px 30px rgba(0,0,0,.28);max-width:90vw;text-align:center}
+#toast.on{opacity:1;transform:translateX(50%) translateY(0)}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.rv{opacity:1;transform:none;transition:none}.hero-med,.auth-med{animation:none}.pzslot.shake{animation:none}}
+.wrow{display:flex;gap:8px;margin-bottom:8px;align-items:center}
+.wrow input{flex:1}
+@media (max-width:1100px){.hero-med{display:none}.vids{grid-template-columns:1fr 1fr}}
+@media (max-width:960px){
+  .authwrap{grid-template-columns:1fr}
+  .auth-brand{padding:50px 30px}
+  .auth-med{display:none}
+  .duo,.close-grid,.agrid,.m4{grid-template-columns:1fr}
+  .m4{grid-template-columns:1fr 1fr}
+  .stat{min-width:46%}
+  .uchip .un{display:none}
+}
+@media (max-width:640px){
+  .hero{padding:60px 0 40px}
+  .sec{padding:48px 0 8px}
+  .plaque{width:100%;max-width:250px}
+  .wpanel{padding:30px 20px}
+  .modal{padding:26px 20px}
+  .nameplate{min-width:100%}
+  .mainnav{order:3;width:100%}
+  .tbin{flex-wrap:wrap}
+  .vids{grid-template-columns:1fr}
+  .m4{grid-template-columns:1fr}
+  .pzmodal{padding:22px 12px}
+}
+
+/* ══ أنماط بازل v2 المطوّر ══ */
+.pz2-stage{display:flex;flex-direction:column;gap:16px;margin:12px auto;width:100%;max-width:100%}
+.pz2-stage.is-h .pzboard{display:flex;justify-content:center;position:relative;filter:drop-shadow(0 14px 24px rgba(20,60,66,.18));overflow-x:auto;padding:8px 0}
+.pz2-stage.is-h .pzslot, .pz2-stage.is-h .pz2-slot{width:var(--pw,135px);height:var(--ph,190px);position:relative;flex-shrink:0}
+.pz2-stage.is-h .pztray{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;background:#F1EFE7;border:1px dashed #C9C4B4;border-radius:14px;padding:16px 12px;min-height:120px}
+.pz2-stage.is-h .pz2-piece{width:var(--pw,135px);height:var(--ph,190px);position:relative;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none;flex-shrink:0}
+
+/* الوضع العمودي للجوال والشاشات الصغيرة */
+.pz2-stage.is-v .pzboard{display:flex;flex-direction:column;align-items:center;position:relative;filter:drop-shadow(0 10px 20px rgba(20,60,66,.16));padding:8px 0}
+.pz2-stage.is-v .pz2-slot{width:var(--pw,300px);height:var(--ph,96px);position:relative;flex-shrink:0}
+.pz2-stage.is-v .pztray{display:flex;flex-direction:column;align-items:center;gap:12px;background:#F1EFE7;border:1px dashed #C9C4B4;border-radius:14px;padding:16px 12px}
+.pz2-stage.is-v .pz2-piece{width:var(--pw,300px);height:var(--ph,96px);position:relative;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+
+.pz2-slot{cursor:pointer;outline:none}
+.pz2-slot svg{position:absolute;left:-36px;top:-36px;width:calc(100% + 72px);height:calc(100% + 72px);overflow:visible;pointer-events:none}
+.pz2-slot:not(.filled) svg path.shape{fill:#F1EFE7;stroke:#C9C4B4;stroke-width:1.4;stroke-dasharray:5 4}
+.pz2-slot.over svg path.shape{fill:#E4F0F1;stroke:var(--green);stroke-dasharray:none}
+.pz2-slot.filled{cursor:default}
+.pz2-slot.shake{animation:shake .35s}
+
+.pz2-piece{outline:none}
+.pz2-piece svg{position:absolute;left:-36px;top:-36px;width:calc(100% + 72px);height:calc(100% + 72px);overflow:visible;pointer-events:none;filter:drop-shadow(0 5px 10px rgba(20,60,66,.22));transition:transform .15s}
+.pz2-piece svg path.shape{stroke:rgba(0,0,0,.14);stroke-width:1.3}
+.pz2-piece:hover svg{transform:scale(1.02)}
+.pz2-piece.sel svg path.shape{stroke:var(--green);stroke-width:2.4;filter:drop-shadow(0 0 6px rgba(36,125,135,.4))}
+.pz2-piece.ghost{position:fixed;z-index:9999;pointer-events:none;cursor:grabbing;opacity:.95}
+.pz2-piece.ghost svg{filter:drop-shadow(0 16px 30px rgba(0,0,0,.38));transform:scale(1.04)}
+
+/* قارئ السلسلة وقائمة الإنجاز */
+.pzreadbox{background:var(--card);border:1px solid var(--line);border-right:4px solid var(--gold);border-radius:12px;padding:12px 16px;font-size:13px;color:#1F3D43;line-height:1.8;box-shadow:var(--sh);min-height:50px;display:flex;align-items:center}
+.pzreadbox b{color:var(--deep);font-weight:700}
+.pz2-seq{list-style:none;padding:0;margin:12px 0 6px;text-align:right;display:flex;flex-direction:column;gap:6px}
+.pz2-seq li{background:var(--surface-soft);border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:13px;color:var(--deep)}
+.pz2-seq li b{color:var(--green);font-weight:700}
+
+</style>
+</head>
+<body>
+
+<div id="auth" class="authwrap">
+  <div class="auth-brand">
+    <svg class="auth-med" viewBox="0 0 200 200"><g fill="none" stroke="var(--gold2)" stroke-width="1"><circle cx="100" cy="100" r="86" opacity=".5"/><circle cx="100" cy="100" r="62" opacity=".7"/><rect x="54" y="54" width="92" height="92" transform="rotate(45 100 100)" opacity=".55"/><rect x="62" y="62" width="76" height="76" opacity=".8"/><circle cx="100" cy="100" r="5" fill="var(--gold2)" stroke="none"/></g></svg>
+    <img class="moelogo" src="/__l5e/assets-v1/a9288bc8-a60e-4c13-b50b-3062e2e6d95a/ministry-logo-white.png" alt="وزارة التعليم — Ministry of Education" width="95" height="70">
+    <div class="ak">وزارة التعليم • برنامج تفاعلي</div>
+    <h1>الثقافة المؤسسية</h1>
+    <p>مساحتنا المشتركة لبناء ثقافة المدرسة: التزامٌ، وإبداعٌ، وروحُ فريقٍ، وتعلّمٌ مستمر… أثرٌ يُكتب بأيدينا ويُحفظ باسمنا.</p>
+    <div class="aq">«معًا نجعل الالتزام ممارسةً يومية، والجودة أثرًا مستدامًا»</div>
+  </div>
+  <div class="auth-side">
+    <div class="auth-card">
+      <h2>حياكِ الله</h2>
+      <div class="as">سجّلي الدخول للمشاركة في برنامج الثقافة المؤسسية</div>
+      <div class="lasthint hidden" id="lastHint">آخر حساب دخلتِ به على هذا الجهاز: <b id="lastName"></b><br>عبّئي كلمة المرور فقط للمتابعة بنفس الحساب</div>
+      <div class="tabs">
+        <button class="tab on" id="tabLogin" type="button">دخول</button>
+        <button class="tab" id="tabReg" type="button">تسجيل معلمة جديدة</button>
+      </div>
+      <form id="formLogin">
+        <div class="field"><label>البريد الإلكتروني</label><input class="ltr" type="email" required id="liUser" autocomplete="username" placeholder="name@example.com"></div>
+        <div class="field"><label>كلمة المرور</label><input class="ltr" type="password" id="liPass" autocomplete="current-password" placeholder="••••••••"><div class="aen">أحرف إنجليزية وأرقام فقط</div></div>
+        <label class="saverow"><input type="checkbox" id="liSave" checked> تذكّر بريدي الإلكتروني على هذا الجهاز</label>
+        <button class="btn-line" type="button" id="forgotPass">نسيت كلمة المرور</button><span class="ferr" id="liErr" role="status"></span>
+        <button class="btn" style="width:100%;justify-content:center" id="liBtn"><i data-lucide="log-in"></i> دخول</button>
+      </form>
+      <form id="formReg" class="hidden">
+        <div class="field"><label>البريد الإلكتروني</label><input class="ltr" type="email" id="rgEmail" required autocomplete="email" placeholder="name@example.com"></div><div class="field"><label>الاسم الكامل</label><input id="rgName" placeholder="مثال: نورة محمد"></div>
+        <div class="field"><label>اسم المستخدم</label><input class="ltr" id="rgUser" autocomplete="username" placeholder="username"><div class="aen">أحرف إنجليزية فقط — مثال: noura.m</div></div>
+        <div class="field"><label>كلمة المرور</label><input class="ltr" type="password" id="rgPass" autocomplete="new-password" placeholder="١٠ أحرف على الأقل"><div class="aen">١٠ أحرف على الأقل: حرف كبير وصغير ورقم ورمز</div></div>
+        <label class="saverow"><input type="checkbox" id="rgSave" checked> تذكّر بريدي الإلكتروني على هذا الجهاز</label>
+        <span class="ferr" id="rgErr"></span>
+        <button class="btn" style="width:100%;justify-content:center"><i data-lucide="user-plus"></i> إنشاء الحساب</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="site" class="hidden">
+  <header id="topbar">
+    <div class="tbin">
+      <div class="brand">
+        <img class="moelogo" src="/__l5e/assets-v1/1fd857d0-64c0-4110-b6c4-71095f80b5d3/ministry-logo-color.png" alt="وزارة التعليم — Ministry of Education" width="95" height="70">
+        <div><b>الثقافة المؤسسية</b><span class="bsub">وزارة التعليم</span></div>
+      </div>
+      <nav class="mainnav">
+        <a href="#sec-intro">المقدمة</a><a href="#sec-welcome">الترحيب</a><a href="#sec-cards">البطاقات</a><a href="#sec-rafah">رفاه</a><a href="#sec-reel">العرض والفيديو</a><a href="#sec-takafu">تكافئ</a><a href="#sec-inno">الابتكار</a><a href="#sec-inspire">الملهم</a><a href="#sec-quiz">التدريب</a><a href="#sec-culture">الثقافة المؤسسية</a><a href="#sec-close">الختام</a>
+      </nav>
+      <div class="uchip">
+        <div class="avatar" id="chipAv">؟</div>
+        <div class="un"><b id="chipName"></b><span id="chipRole"></span><span class="pchip" id="chipPts"></span></div>
+      </div>
+      <button class="btn-line hidden" id="btnDash"><i data-lucide="layout-dashboard"></i> لوحة المتابعة</button>
+      <button class="ibtn" id="btnOut" title="تسجيل الخروج"><i data-lucide="log-out"></i></button>
+    </div>
+  </header>
+
+  <section class="hero" id="sec-intro">
+    <svg class="hero-med" viewBox="0 0 200 200"><g fill="none" stroke="var(--gold)" stroke-width="1"><circle cx="100" cy="100" r="86" opacity=".45"/><circle cx="100" cy="100" r="62" opacity=".65"/><rect x="54" y="54" width="92" height="92" transform="rotate(45 100 100)" opacity=".5"/><rect x="62" y="62" width="76" height="76" opacity=".75"/><circle cx="100" cy="100" r="5" fill="var(--gold)" stroke="none"/></g></svg>
+    <div class="wrap">
+      <div class="kick rv">المحور الأول • المقدمة</div>
+      <h1 class="hero-t rv">الثقافة المؤسسية</h1>
+      <div class="hero-s rv">الالتزام ممارسةٌ يومية… والجودة أثرٌ مستدام</div>
+      <p class="hero-p rv">في برنامج الثقافة المؤسسية نؤمن أن ثقافة المدرسة ليست شعارات تُعلَّق على الجدران، بل ممارسات تتنفس في تفاصيل يومنا المدرسي: التزامٌ في الإجراء، فكرةٌ تُخفف عن زميلة، روحٌ تجمعنا على هدفٍ واحد، ومعرفةٌ تنتقل من خبرةٍ إلى أثر.
+
+هذه الصفحة مساحتنا المشتركة في هذا الفصل؛ برنامج تفاعلي يجمع كل محاورنا في مكانٍ واحد: من الترحيب بالوافدات الجدد، إلى بطاقات الصفات الخمس، إلى الأيام العالمية ضمن برنامج رفاه، وصولًا إلى الابتكار والتدريب.
+
+كل مشاركة تكتبينها هنا تُحفظ باسمك في الموقع — ويمكنكِ إرفاق صورة أو ملف أو تسجيل صوتي مع مشاركتكِ — وتظهر مباشرة في لوحة متابعة الإدارة، فلنصنع معًا أثرًا موثقًا.</p>
+      <div class="hstrip rv">
+        <div><b>٥</b><span>بطاقات قيمٍ نبني بها ثقافتنا</span></div>
+        <i class="dia"></i>
+        <div><b>٦</b><span>سلاسل بازل من ٥ عناصر متكاملة</span></div>
+        <i class="dia"></i>
+        <div><b>١٠٠٪</b><span>من إنجازاتكنّ ونقاطكنّ تُحفظ باسم صاحبتها</span></div>
+      </div>
+      <div class="hero-cta rv"><a href="#sec-welcome" style="text-decoration:none"><button class="btn"><i data-lucide="arrow-down"></i> ابدئي جولة البرنامج</button></a></div>
+    </div>
+  </section>
+
+  <section class="sec" id="sec-welcome">
+    <div class="wrap">
+      <div class="shead rv">
+        <div class="snum"><span>٢</span></div>
+        <div><div class="skick">المحور الثاني — الترحيب بالمعلمات الجدد</div><h2>حياكِ بيننا</h2></div>
+        <div class="sline"></div>
+      </div>
+      <div class="wpanel rv">
+        <div class="wkick">بكل محبة وسرور</div>
+        <div class="wtitle">نرحّب بزميلاتنا العزيزات</div>
+        <p class="wtext">سعداء بانضمامكن إلى أسرتنا التعليمية، ونسأل الله أن تكون بدايتكن معنا بدايةً جميلة، مليئة بالعطاء والإنجاز.</p>
+        <div class="wnames" id="wNames"></div>
+        <div class="weditwrap admin-only"><button class="btn-line" id="wEdit" type="button"><i data-lucide="pencil"></i> تعديل أسماء المعلمات</button></div>
+        <div class="wclose">أهلًا بكنّ بيننا.. بيتٌ واحد، وفريقٌ واحد، ونجاحٌ نصنعه معًا.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="sec-cards">
+    <div class="wrap">
+      <div class="shead rv">
+        <div class="snum"><span>٣</span></div>
+        <div><div class="skick">المحور الثالث — ثقافتنا المؤسسية</div><h2>بطاقات الصفات الخمس</h2></div>
+        <div class="sline"></div>
+      </div>
+      <p class="sublead rv">خمس قيمٍ تصنع هوية مدرستنا. اضغطي البطاقة وشاركينا رسالتكِ — ويمكنكِ إرفاق صورة أو ملف أو تسجيل صوتي مع مشاركتكِ.</p>
+      <div class="plqs rv" id="plqRow"></div>
+      <div class="chint rv">جميع المشاركات ومرفقاتها تظهر لمديرة الموقع في «لوحة المتابعة» مع الاسم والتاريخ</div>
+    </div>
+  </section>
+
+  <section class="sec" id="sec-rafah">
+    <div class="wrap">
+      <div class="shead rv">
+        <div class="snum"><span>٤</span></div>
+        <div><div class="skick">المحور الرابع — التوعية الصحية</div><h2>سلاسل البازل… خمسة عناصر متكاملة</h2></div>
+        <div class="sline"></div>
+      </div>
+      <p class="sublead rv">كل لوحة سلسلة من ٥ قطع متشابكة: التعريف ثم الجهة ثم الدور ثم الخدمة ثم الأثر — ركّبيها بالترتيب فتقرئي السلسلة كاملة، وكل إنجاز يمنحكِ نقاطًا تُحفظ باسمك.</p>
+      <div class="pzcards rv" id="pzCards"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="sec-reel">
+    <div class="wrap">
+      <div class="shead rv">
+        <div class="snum"><span>٥</span></div>
+        <div><div class="skick">المحور الخامس — عرض مرئي وفيديوهات</div><h2>موسم الأيام العالمية</h2></div>
+        <div class="sline"></div>
+      </div>
+      <p class="sublead rv">عرض يمرّ تلقائيًا على أيامنا العالمية بتواريخها الدقيقة ومؤقتاتها الحية — يليه معرض فيديوهات تعريفية. اضغطي صورة الفيديو لتشغيله، أو السهم لفتحه في نافذة مستقلة.</p>
+      <div class="reel rv">
+        <div class="reel-top">
+          <div><div class="rkick">عرض متحرك • ٦ محطات</div><h3>من الإسعافات الأولية… إلى حقوق الإنسان</h3></div>
+          <div class="rctrl">
+            <button class="rcbtn" id="rPrev" type="button" title="السابق"><i data-lucide="chevron-right"></i></button>
+            <button class="rcbtn" id="rPlay" type="button" title="إيقاف/تشغيل"><i data-lucide="pause"></i></button>
+            <button class="rcbtn" id="rNext" type="button" title="التالي"><i data-lucide="chevron-left"></i></button>
+          </div>
+        </div>
+        <div class="rstage" id="rStage">
+          <div class="ricon" id="rIcon"></div>
+          <span class="rdate" id="rDate"></span>
+          <div class="rname" id="rName"></div>
+          <p class="rdef" id="rDef"></p>
+          <div data-cd="" id="rCdHost"></div>
+          <div class="rnote"><i data-lucide="lightbulb"></i><span id="rNote"></span></div>
+        </div>
+        <div class="rsegs" id="rSegs"></div>
+      </div>
+      <div class="vrow2 admin-only" style="margin-top:18px"><button class="btn-line" id="vEdit" type="button"><i data-lucide="film"></i> إضافة / تعديل روابط الفيديوهات</button></div>
+      <div class="vids rv" id="vids"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="sec-takafu">
+    <div class="wrap">
+      <div class="shead rv">
+        <div class="snum"><span>٦</span></div>
+        <div><div class="skick">المحور السادس — برنامج تكافئ</div><h2>اليوم العالمي للعصا البيضاء</h2></div>
+        <div class="sline"></div>
+      </div>
+      <div class="duo">
+        <div class="panel rv">
+          <span class="datechip">15 أكتوبر — كل عام</span>
+          <div data-cd="cane"></div>
+          <h3 style="margin-top:14px">معًا… نرى بالقلب قبل العين</h3>
+          <p class="ptext">حرصًا من إدارة المدرسة على تقديم الدعم اللازم والتأكد من تأمين احتياجات جميع المنسوبات (سواءً كانت احتياجات صحية، تقنية، حركية، أو تنظيمية) لتسهيل أداء مهامكن الوظيفية على أكمل وجه:</p>
+          <div class="bcane">
+            <svg viewBox="0 0 60 160"><rect x="24" y="4" width="12" height="14" rx="5" fill="#1C2B2E"/><rect x="26" y="16" width="8" height="118" rx="4" fill="#FFFFFF" stroke="#1C2B2E" stroke-opacity=".18"/><rect x="26" y="132" width="8" height="16" rx="3" fill="#B7473D"/></svg>
+            <p>العصا البيضاء ليست مجرد أداة… بل رمزُ استقلالٍ وكرامة، ويومُها العالمي دعوةٌ لبيئةٍ يشعر فيها الجميع بالأمان والتمكين.</p>
+          </div>
+          <div class="pnote"><i data-lucide="shield-check"></i>تُعالَج الطلبات بسرّية تامة، وتُنسّقها إدارة المدرسة مع الأجهزة المختصة.</div>
+        </div>
+        <div class="panel rv">
+          <h3>سجّلي احتياجاتكِ المساندة</h3>
+          <p class="ptext" style="margin-bottom:16px">يُرجى تسجيل أي أدوات أو احتياجات مساندة ترغبين في توفيرها لكِ:</p>
+          <form id="takForm">
+            <div class="field"><label>نوع الاحتياج</label>
+              <select id="takKind">
+                <option value="">اختاري النوع…</option>
+                <option>احتياجات صحية</option><option>احتياجات تقنية</option><option>احتياجات حركية</option><option>احتياجات تنظيمية</option><option>أخرى</option>
+              </select>
+            </div>
+            <div class="field"><label>وصف الأدوات أو الاحتياجات المساندة</label><textarea id="takText" rows="4" placeholder="اكتبي هنا ما تحتاجينه لتسهيل أداء مهامكِ الوظيفية…"></textarea></div>
+            <span class="ferr" id="takErr"></span>
+            <button class="btn" type="submit"><i data-lucide="send"></i> إرسال الطلب</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="sec-inno">
+    <div class="wrap">
+      <div class="shead rv">
+        <div class="snum"><span>٧</span></div>
+        <div><div class="skick">المحور السابع — الابتكار</div><h2>معلماتنا المبدعات</h2></div>
+        <div class="sline"></div>
+      </div>
+      <div class="duo">
+        <div class="panel rv">
+          <h3>فكرتكِ… فرقٌ يصنعه</h3>
+          <p class="ptext">سعياً لتعزيز ثقافة الابتكار وتطوير خدماتنا التعليمية، نتيح لكم الفرصة لتسجيل أفكاركم ومبادراتكم الابتكارية، علماً بأنه سيتم تكريم المشاركات المتميزة على مستوى المدرسة</p>
+          <div class="pnote"><i data-lucide="award"></i>المشاركات المتميزة تُكرَّم على مستوى المدرسة — ولا تحتاجي أن تبدئي من الصفر؛ روي في المألوف فرصةً لشيءٍ أفضل.</div>
+        </div>
+        <div class="panel rv">
+          <h3>سجّلي فكرتكِ الابتكارية</h3>
+          <form id="innoForm" style="margin-top:14px">
+            <div class="field"><label>عنوان الفكرة</label><input id="innoTitle" placeholder="مثال: لوحة إنجاز أسبوعية للفصل"></div>
+            <div class="field"><label>مجال الفكرة</label>
+              <select id="innoField"><option>تعليمية</option><option>إدارية</option><option>بيئة مدرسية</option><option>خدمة الطالبات</option><option>أخرى</option></select>
+            </div>
+            <div class="field"><label>وصف الفكرة والمشكلة التي تعالجها</label><textarea id="innoText" rows="4" placeholder="ما الفكرة؟ وما المشكلة التي عالجتها؟ وكيف أحدثت فرقًا في المدرسة؟"></textarea></div>
+            <span class="ferr" id="innoErr"></span>
+            <button class="btn" type="submit"><i data-lucide="sparkles"></i> تسجيل الفكرة</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="sec-inspire">
+    <div class="wrap">
+      <div class="shead rv">
+        <div class="snum"><span>٨</span></div>
+        <div><div class="skick">المحور الثامن — تبادل الخبرات</div><h2>برنامج التواصل الملهم</h2></div>
+        <div class="sline"></div>
+      </div>
+      <div class="duo">
+        <div class="panel rv">
+          <h3>خبرة تُلهم… تجربة تُلهم غيرها</h3>
+          <p class="ptext">إيماناً بأهمية تبادل الخبرات ونقل التجارب المتميزة، يسرنا في (منسقية الثقافة) دعوتكنّ للمشاركة في ترشيح معلمات ملهمات (من داخل المدرسة أو من خارجها) ضمن مبادرة «التواصل الملهم» للاستفادة من خبراتهنّ وتطوير بيئتنا التعليمية</p>
+          <div class="pnote"><i data-lucide="quote"></i>الترشيح هنا يذهب مباشرة إلى منسقية الثقافة المؤسسية لدراسته وتنسيق اللقاءات.</div>
+        </div>
+        <div class="panel rv">
+          <h3>نموذج الترشيح</h3>
+          <form id="insForm" style="margin-top:14px">
+            <div class="field"><label>اسم المعلمة المرشَّحة</label><input id="insName" placeholder="اكتبي اسم المعلمة التي تلهمكِ"></div>
+            <div class="field"><label>نطاق الترشيح</label>
+              <div class="radio-row">
+                <label><input type="radio" name="inScope" value="من داخل المدرسة" checked> من داخل المدرسة</label>
+                <label><input type="radio" name="inScope" value="من خارج المدرسة"> من خارج المدرسة</label>
+              </div>
+            </div>
+            <div class="field"><label>سبب الترشيح — ما الذي يميزها؟</label><textarea id="insReason" rows="4" placeholder="خبرتها، مبادرتها، أثرها على الطالبات أو الزميلات…"></textarea></div>
+            <span class="ferr" id="insErr"></span>
+            <button class="btn" type="submit"><i data-lucide="send"></i> إرسال الترشيح</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="sec-quiz">
+    <div class="wrap">
+      <div class="shead rv">
+        <div class="snum"><span>٩</span></div>
+        <div><div class="skick">المحور التاسع — التدريب</div><h2>أسئلة تدريبية قياسية</h2></div>
+        <div class="sline"></div>
+      </div>
+      <p class="sublead rv">اختاري الإجابة الأنسب لكل موقف؛ الإجابة الصحيحة تمنحكِ نقاطًا تُحفظ باسمك.</p>
+      <div id="quizWrap"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="sec-culture">
+    <div class="wrap">
+      <div class="shead rv">
+        <div class="snum"><span>١٠</span></div>
+        <div><div class="skick">المحور العاشر — مفهومنا</div><h2>الثقافة المؤسسية… روحُ المدرسة وجرسُها</h2></div>
+        <div class="sline"></div>
+      </div>
+      <div class="duo">
+        <div class="panel rv">
+          <h3>ما الثقافة المؤسسية؟</h3>
+          <p class="ptext">الثقافة المؤسسية هي منظومة القيم والمعتقدات والممارسات المشتركة التي تحدد طريقة العمل والتفكير والتعامل داخل المؤسسة التعليمية؛ فهي «شخصية المدرسة» التي تظهر في سلوك الجميع حتى حين لا يراقبهم أحد.
+
+وهي ليست ما يُكتب في اللوائح، بل ما يُمارَس في الممرات والفصول وغرف المعلمين: كيف نلتزم؟ كيف نتعامل مع الزميلة؟ كيف نخدم الطالبة؟ وكيف نواجه التحديات معًا؟</p>
+        </div>
+        <div class="panel rv">
+          <h3>لماذا نهتم بها في مدرستنا؟</h3>
+          <p class="ptext">لأن الثقافة المؤسسية القوية هي التي تحوّل الخطط إلى ممارسات، والأنظمة إلى سلوك يومي:</p>
+          <div style="display:flex;gap:12px;padding:10px 0;font-size:13.5px;align-items:flex-start"><i data-lucide="trending-up" style="width:16px;height:16px;color:var(--green);flex-shrink:0;margin-top:6px"></i><div><b style="color:var(--deep)">ترفع جودة الأداء</b><small style="display:block;color:var(--mut);font-size:12px">حين يلتزم الجميع بمعايير واحدة يتحسّن المخرَج التعليمي.</small></div></div>
+          <div style="display:flex;gap:12px;padding:10px 0;border-top:1px dashed rgba(0,0,0,.09);font-size:13.5px;align-items:flex-start"><i data-lucide="heart" style="width:16px;height:16px;color:var(--green);flex-shrink:0;margin-top:6px"></i><div><b style="color:var(--deep)">تعزز الانتماء والولاء</b><small style="display:block;color:var(--mut);font-size:12px">المنسوبة التي تشعر بالقبول تمنح أكثر مما يُطلب منها.</small></div></div>
+          <div style="display:flex;gap:12px;padding:10px 0;border-top:1px dashed rgba(0,0,0,.09);font-size:13.5px;align-items:flex-start"><i data-lucide="users" style="width:16px;height:16px;color:var(--green);flex-shrink:0;margin-top:6px"></i><div><b style="color:var(--deep)">تبني بيئة عمل إيجابية</b><small style="display:block;color:var(--mut);font-size:12px">تعاونٌ بدل التنافس السلبي، وثقةٌ بدل الحذر.</small></div></div>
+          <div style="display:flex;gap:12px;padding:10px 0;border-top:1px dashed rgba(0,0,0,.09);font-size:13.5px;align-items:flex-start"><i data-lucide="infinity" style="width:16px;height:16px;color:var(--green);flex-shrink:0;margin-top:6px"></i><div><b style="color:var(--deep)">تصنع الاستدامة</b><small style="display:block;color:var(--mut);font-size:12px">التطوير لا يتوقف عند رحيل الأفراد… لأن الثقافة تبقى.</small></div></div>
+        </div>
+      </div>
+      <div class="m4 rv">
+        <div class="mini"><div class="mi"><i data-lucide="gem"></i></div><h5>القيم والمعتقدات</h5><p>الأساس الذي نؤمن به: الالتزام، الجودة، الإبداع، روح الفريق، التعلم المستمر.</p></div>
+        <div class="mini"><div class="mi"><i data-lucide="footprints"></i></div><h5>الممارسات اليومية</h5><p>السلوكيات المتكررة التي تحوّل القيم إلى واقع ملموس في كل يوم دراسي.</p></div>
+        <div class="mini"><div class="mi"><i data-lucide="flag"></i></div><h5>الرموز والمناسبات</h5><p>الاحتفاء بالإنجازات، والأيام العالمية، والطقوس المشتركة التي تعزز الهوية.</p></div>
+        <div class="mini"><div class="mi"><i data-lucide="book-open"></i></div><h5>القصص والقدوات</h5><p>تجارب الناجحين داخل المدرسة تُروى وتُحتذى فتصبح جزءًا من ذاكرة المؤسسة.</p></div>
+      </div>
+      <div class="panel rv" style="margin-top:20px">
+        <h3>كيف نعيشها في مدرستنا؟</h3>
+        <p class="ptext">من خلال بطاقات الصفات الخمس التي تفاعلتم معها في المحور الثالث — كل بطاقة قيمةٌ تُترجم إلى مشاركة وممارسة ومرفق موثق باسمك:</p>
+        <div class="rkz"><span>الالتزام</span><span>الجودة</span><span>الإبداع</span><span>روح الفريق</span><span>التعلم المستمر</span></div>
+        <div class="pnote"><i data-lucide="book-open"></i>هذه القيم ليست محاور برنامجنا فحسب… بل معايير نقيس بها حضورنا اليومي في المدرسة.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="sec-close">
+    <div class="wrap">
+      <div class="shead rv">
+        <div class="snum"><span>١١</span></div>
+        <div><div class="skick">المحور الحادي عشر — كلمة الشكر</div><h2>الختام</h2></div>
+        <div class="sline"></div>
+      </div>
+      <div class="close-grid">
+        <div class="panel letter rv">
+          <h3>كلمة شكر… من القلب</h3>
+          <p class="ptext">حين يلتقي الشغف بالروح الصادقة يُصنع الأثر، ولقد لمستُ في عطائكنّ إبداعاً يُزهر في القلب قبل أن يُرى بالعين.
+شكراً لأنكنّ النبض الملهم لهذا النجاح، وفخر وجودي بين هذه الأرواح المعطاءة يعادل كل طموح نصنعه معاً.</p>
+          <div class="sig">مع تحيات منسقة الثقافة المؤسسية<small>عواطف عبدالله محمد آل عبدالله</small></div>
+        </div>
+        <div class="panel rv">
+          <h3>وأخيرًا</h3>
+          <p class="ptext">كل مشاركة سجّلتموها هنا، وكل صورة وتسجيل أرفقتموه، هو حجرٌ في بناء ثقافتنا المؤسسية — أثرٌ محفوظ باسمكم، يُروى للقادمين بعدنا.
+
+نلتقي في المحاور القادمة… بروحٍ واحدة، وفريقٍ واحد.</p>
+          <div class="pnote"><i data-lucide="shield-check"></i>جميع الإنجازات والنقاط محفوظة ومتزامنة — تظهر للإدارة من أي جهاز.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <img class="moelogo" src="/__l5e/assets-v1/1fd857d0-64c0-4110-b6c4-71095f80b5d3/ministry-logo-color.png" alt="وزارة التعليم — Ministry of Education" width="95" height="70">
+      <b>الثقافة المؤسسية — وزارة التعليم</b><br>
+      الإنجازات والنقاط متزامنة عبر جميع الأجهزة، ويمكن لكل معلمة الاحتفاظ برابط مشاركتها كإثبات.
+    </div>
+  </footer>
+</div>
+
+<div id="admin" class="hidden">
+  <div class="abar">
+    <div class="wrap">
+      <div><h2>لوحة متابعة الموقع</h2><div class="asub"><span>كل ما يجري في الموقع… بين يديكِ</span><span class="cchip off" id="cloudChip"><i data-lucide="cloud"></i> <span id="cloudTxt">الوضع المحلي فقط</span></span></div></div>
+      <div class="abtns">
+        <button class="abtn" id="aBack"><i data-lucide="undo-2"></i> عرض الموقع</button>
+        <button class="abtn primary" id="aCsv"><i data-lucide="download"></i> تصدير النتائج CSV</button>
+        <button class="abtn" id="aPrint"><i data-lucide="printer"></i> تقرير للطباعة</button>
+        <button class="abtn" id="aBak"><i data-lucide="save"></i> نسخة احتياطية</button>
+        <label class="abtn afile"><i data-lucide="upload"></i> استعادة نسخة<input type="file" id="aRestore" accept=".json,application/json"></label>
+        <button class="abtn danger" id="aWipe"><i data-lucide="trash-2"></i> مسح المشاركات</button>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="astats" id="aStats"></div>
+    <div class="agrid">
+      <aside>
+        <div class="apanel"><h4>المعلمات المسجلات — النقاط والأيام</h4><div id="aUsers"></div></div>
+        <div class="apanel">
+           <h4>الحفظ المشترك — Lovable Cloud</h4>
+          <p class="anote" style="margin-top:12px" id="cloudNote"></p>
+        </div>
+        <div class="apanel">
+          <h4>حساب الإدارة</h4>
+          <div class="field"><label>كلمة المرور الحالية</label><input class="ltr" type="password" id="apCur" autocomplete="current-password"></div>
+          <div class="field"><label>كلمة المرور الجديدة</label><input class="ltr" type="password" id="apNew" autocomplete="new-password"><div class="aen" style="font-size:11px;color:var(--mut)">١٠ أحرف على الأقل: حرف كبير وصغير ورقم ورمز</div></div>
+          <span class="ferr" id="apErr"></span>
+          <button class="btn" id="apSave"><i data-lucide="key-round"></i> تحديث كلمة المرور</button>
+        </div>
+        <div class="apanel" id="aiPanel">
+          <h4>مساعد المراجعة بالذكاء الاصطناعي</h4>
+          <p class="anote">ألصقي تفاصيل الأعمال أو استخدمي المشاركات المعروضة حاليًا، ثم احصلي على ملخص وأبرز الملاحظات.</p>
+          <div class="field"><textarea id="aiIn" rows="6" style="width:100%" placeholder="تفاصيل الأعمال المقدّمة…"></textarea></div>
+          <button class="btn-line" type="button" id="aiFill">استخدام المشاركات المعروضة</button>
+          <button class="btn" type="button" id="aiGo"><i data-lucide="sparkles"></i> لخّص واستخرج الملاحظات</button>
+          <span class="ferr" id="aiErr" role="status"></span>
+          <div id="aiOut" style="white-space:pre-wrap;line-height:1.8;margin-top:10px"></div>
+        </div>
+        <div class="apanel"><h4>توزيع المشاركات</h4><div id="aBars"></div><p class="anote">يُنصح بتنزيل «نسخة احتياطية» بشكل دوري كطبقة أمان إضافية.</p></div>
+      </aside>
+      <section>
+        <div class="afilters">
+          <select id="fType"><option value="all">كل الأقسام</option></select>
+          <select id="fUser"><option value="all">كل المعلمات</option></select>
+          <input id="fQ" placeholder="بحث في المشاركات…">
+          <button class="abtn" id="aReset" style="color:#F3EEDC;border-color:rgba(243,238,220,.3);background:var(--deep)"><i data-lucide="rotate-ccw"></i> إظهار الكل</button>
+          <span class="acount" id="aCount"></span>
+        </div>
+        <div class="tblwrap">
+          <table>
+            <thead><tr><th>المعلمة</th><th>القسم</th><th>المشاركة</th><th>تفاصيل</th><th>مرفقات</th><th>التاريخ</th><th></th></tr></thead>
+            <tbody id="aRows"></tbody>
+          </table>
+          <div id="aEmpty" class="aempty hidden">لا توجد مشاركات مطابقة حتى الآن.</div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div id="ovl" class="ovl hidden">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="ibtn mclose" id="mClose" type="button"><i data-lucide="x"></i></button>
+    <div class="morn"><i></i></div>
+    <div class="mkick">بطاقات الصفات الخمس</div>
+    <h3 class="mtitle" id="mTitle"></h3>
+    <div class="mquote" id="mQuote"></div>
+    <p class="mbody" id="mBody"></p>
+    <div id="mFormWrap">
+      <div class="field"><label>رسالتكِ</label><textarea id="mText" rows="4" maxlength="1500"></textarea></div>
+      <div class="attbar" id="attBar">
+        <button type="button" class="attbtn" id="btnImg"><i data-lucide="image"></i> صورة</button>
+        <button type="button" class="attbtn" id="btnFile"><i data-lucide="paperclip"></i> ملف</button>
+        <button type="button" class="attbtn" id="btnRec"><i data-lucide="mic"></i> تسجيل صوتي</button>
+        <button type="button" class="attbtn" id="btnRecStop"><i data-lucide="square"></i> إيقاف التسجيل</button>
+        <input type="file" id="fImg" accept="image/*" multiple hidden>
+        <input type="file" id="fFile" hidden>
+        <input type="file" id="fAudio" accept="audio/*" hidden>
+      </div>
+      <div class="recbox" id="recBox"><span class="recdot"></span><span>جارٍ التسجيل…</span><b id="recT" dir="ltr">00:00</b></div>
+      <div class="atchips" id="attChips"></div>
+      <div class="mrow"><span class="ferr" id="mErr"></span><button class="btn" id="mSend" type="button"><i data-lucide="pen-line"></i><span id="mSendT">تسجيل المشاركة</span></button></div>
+      <div class="aen" style="text-align:center;margin-top:6px">الرسالة اختيارية إذا أرفقتِ مرفقًا — الملف حتى ١.٥ ميغابايت، والتسجيل حتى ١٠٠ ثانية</div>
+    </div>
+    <div id="mDone" class="donew hidden">
+      <div class="dochk"><i data-lucide="check"></i></div>
+      <h4>سُجّلت مشاركتكِ باسمك</h4>
+      <p id="mDoneT"></p>
+      <div>
+        <button class="btn" id="mCopy" type="button"><i data-lucide="link"></i> نسخ رابط المشاركة</button>
+        <button class="btn-line" id="mAgain" type="button">إضافة مشاركة أخرى</button>
+        <button class="btn-line" id="mClose2" type="button">إغلاق</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="pzOvl" class="ovl hidden">
+  <div class="modal pzmodal" role="dialog" aria-modal="true">
+    <button class="ibtn mclose" id="pzClose" type="button" aria-label="إغلاق"><i data-lucide="x"></i></button>
+    <div class="morn"><i></i></div>
+    <div class="mkick">برنامج رفاه — سلاسل البازل التوعوية</div>
+    <h3 class="mtitle" id="pzTitle" style="font-size:24px"></h3>
+    <div id="pzCd" class="pzcdbox"></div>
+    
+    <div class="pzstats">
+      <div class="stat-c"><b id="pzTime">٠</b><span>ثانية</span></div>
+      <div class="stat-c"><b id="pzMist">٠</b><span>أخطاء</span></div>
+      <div class="stat-c"><b id="pzDone">٠/٥</b><span>قطعة مركّبة</span></div>
+    </div>
+    
+    <div class="pzacts">
+      <button class="btn-line" id="pzHint" type="button"><i data-lucide="lightbulb"></i> تلميح (<span id="pzHintN">٢</span>)</button>
+      <button class="btn-line" id="pzShuffle" type="button"><i data-lucide="shuffle"></i> خلط جديد</button>
+      <button class="btn-line admin-only" id="pzAuto" type="button"><i data-lucide="wand-2"></i> تركيب تلقائي (إدارة)</button>
+      <span class="vchip">بازل v2</span>
+    </div>
+    
+    <div class="pzreadbox" id="pzRead">اقرئي القطع وركّبيها… وستظهر هنا السلسلة وهي تتشكّل.</div>
+
+    <div id="pzStage" class="pz2-stage is-h">
+      <div class="pzboard" id="pzBoard"></div>
+      <div class="pztray" id="pzTray"></div>
+    </div>
+
+    <div class="pzhint">اسحبي القطعة إلى خانتها المناسبة لمعناها ودورها، أو اضغطي القطعة ثم اضغطي الخانة</div>
+    
+    <div id="pzWin" class="donew hidden">
+      <div class="dochk"><i data-lucide="party-popper"></i></div>
+      <h4>أحسنتِ! اكتملت السلسلة</h4>
+      <div id="pzWinT"></div>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px">
+        <button class="btn" id="pzReceipt" type="button"><i data-lucide="receipt"></i> إيصال الإنجاز</button>
+        <button class="btn-line" id="pzAgain" type="button"><i data-lucide="rotate-ccw"></i> لعبة أخرى</button>
+        <button class="btn-line" id="pzDone2" type="button">إغلاق</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="rcOvl" class="ovl hidden">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="ibtn mclose" id="rcClose" type="button"><i data-lucide="x"></i></button>
+    <div class="morn"><i></i></div>
+    <div class="mkick">إثبات مشاركة محفوظ</div>
+    <h3 class="mtitle" style="font-size:26px">إيصال المشاركة</h3>
+    <div id="rcBody" style="margin-top:10px"></div>
+    <div class="rcbtns">
+      <button class="btn" id="rcCopy" type="button"><i data-lucide="link"></i> نسخ رابط المشاركة</button>
+      <button class="btn-line" id="rcPrint" type="button"><i data-lucide="printer"></i> طباعة الإيصال</button>
+      <button class="btn-line" id="rcClose2" type="button">إغلاق</button>
+    </div>
+  </div>
+</div>
+
+<div id="wOvl" class="ovl hidden">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="ibtn mclose" id="wClose" type="button"><i data-lucide="x"></i></button>
+    <div class="morn"><i></i></div>
+    <div class="mkick">إدارة المحتوى</div>
+    <h3 class="mtitle">أسماء المعلمات الجدد</h3>
+    <p class="mbody" style="text-align:center;border:none;padding:0">عدّلي الأسماء التي سيتم الترحيب بها — تُحفظ للجميع فورًا.</p>
+    <div id="wRows" style="margin-top:14px"></div>
+    <div style="display:flex;gap:10px;justify-content:space-between;margin-top:14px;flex-wrap:wrap">
+      <button class="btn-line" id="wAdd" type="button"><i data-lucide="plus"></i> إضافة اسم</button>
+      <button class="btn" id="wSave" type="button"><i data-lucide="check"></i> حفظ الأسماء</button>
+    </div>
+  </div>
+</div>
+
+<div id="vOvl" class="ovl hidden">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="ibtn mclose" id="vClose" type="button"><i data-lucide="x"></i></button>
+    <div class="morn"><i></i></div>
+    <div class="mkick">إدارة المحتوى</div>
+    <h3 class="mtitle">فيديوهات الأيام العالمية</h3>
+    <p class="mbody" style="text-align:center;border:none;padding:0;font-size:13px">الصقي رابط يوتيوب أو فيميو أو جوجل درايف أو ملف فيديو مباشر (mp4) لكل يوم — ويظهر للجميع فورًا.</p>
+    <div id="vRows" style="margin-top:14px"></div>
+    <div style="display:flex;justify-content:flex-end;margin-top:14px"><button class="btn" id="vSave" type="button"><i data-lucide="check"></i> حفظ الروابط</button></div>
+  </div>
+</div>
+
+<div id="attOvl" class="ovl hidden">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="ibtn mclose" id="attClose" type="button"><i data-lucide="x"></i></button>
+    <div class="morn"><i></i></div>
+    <div class="mkick">مرفقات المشاركة</div>
+    <h3 class="mtitle" id="attWho" style="font-size:24px"></h3>
+    <div id="attBody"></div>
+  </div>
+</div>
+
+<div id="toast"></div>
+<noscript style="display:block;text-align:center;padding:20px">هذا الموقع يحتاج تفعيل JavaScript للعمل.</noscript>
+
+<script>
+/* الحسابات والأعمال محفوظة في Lovable Cloud */
+const cloud=()=>window.parent.ministryCloud;
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+const LS={u:'qz_users_v4',e:'qz_entries_v4',s:'qz_session_v4',w:'qz_welcome_v4',v:'qz_videos_v4',l:'qz_last_v4',c:'qz_saved_v4'};
+const store={
+  get(k,d){try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}},
+  set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+};
+let users=[];
+let entries=[];
+let session=null;
+let welcome=store.get(LS.w,null);
+let videos=store.get(LS.v,{});
+let savedCred=store.get(LS.c,null); if(savedCred?.p){savedCred={u:savedCred.u};store.set(LS.c,savedCred)} localStorage.removeItem(LS.u); localStorage.removeItem(LS.s); /* بيانات الدخول المحفوظة باختيار المعلمة */
+const DEF_VIDEOS={
+  firstaid:'https://youtu.be/pqviLVnxPdU',
+  alzheimer:'https://youtu.be/XH9sdTlHrcw',
+  mental:'https://youtu.be/2Zqe7FRJzVo',
+  breast:'https://youtu.be/somcl-bY0fc',
+  diabetes:'https://youtu.be/5LB0pzWe63M',
+  human:'https://youtu.be/lddFKCAtQtU'
+};
+if(!Array.isArray(welcome)||!welcome.length)welcome=['فتحية الكعيبي','إيمان السيهاتي','سارة العنبر'];
+if(typeof videos!=='object'||!videos)videos={};
+
+let cloudOn=false,myUid=null;
+function updateCloudChip(){
+ const c=$('#cloudChip');if(!c)return;
+ c.className='cchip '+(cloudOn?'on':'off');
+ $('#cloudTxt').textContent=cloudOn?'متصل بـ Lovable Cloud':'جارٍ الاتصال…';
+ $('#cloudNote').textContent=cloudOn?'الحسابات والأعمال والمرفقات محفوظة، وتظهر لمدير المشروع من جميع الأجهزة.':'تعذر الاتصال؛ لن تُسجل المشاركات حتى يعود الاتصال.';
+}
+function adoptCloud(data){
+ if(!data)return;
+ users=data.users;entries=data.entries;session=data.session;myUid=data.uid;
+ if(data.config){welcome=data.config.welcome;videos=data.config.videos;}
+ syncUI();
+}
+let syncing=false,saveBusy=false;
+async function refreshCloud(login=false){
+ if(syncing||saveBusy||!cloud())return;
+ syncing=true;
+ try{const data=await cloud().load(login);if(data){adoptCloud(data);cloudOn=true;}else{session=null;users=[];entries=[];}}
+ catch(e){cloudOn=false;toast('تعذر الاتصال: '+e.message)}
+ finally{syncing=false;updateCloudChip()}
+}
+async function initCloud(){
+ for(let i=0;i<100&&!cloud();i++)await new Promise(r=>setTimeout(r,100));
+ if(!cloud()){toast('افتحي الموقع من الصفحة الرئيسية للاتصال');return}
+ await refreshCloud();updateCloudChip();if(session&&curUser()){enterApp();handleHash()}
+ setInterval(()=>{if(session&&!document.hidden)refreshCloud()},15000);
+}
+
+function renderAdminIfOpen(){if(!$('#admin').classList.contains('hidden'))renderAdmin()}
+
+function saveAll(){store.set(LS.w,welcome);store.set(LS.v,videos);}
+async function saveCloudConfig(){
+ try{await cloud().config(welcome,videos);toast('حُفظت الإعدادات للجميع');return true}
+ catch(e){toast('لم تُحفظ الإعدادات: '+e.message);await refreshCloud();return false}
+}
+const persistS=()=>{};
+
+const curUser=()=>users.find(u=>u.username===session)||null;
+
+/* ══ الحفظ التلقائي لبيانات الدخول: تُقرأ وتُعبأ قبل رسم أي شيء ══ */
+function fillSavedCred(){
+  if(savedCred&&savedCred.u){
+    $('#liUser').value=savedCred.u;
+    $('#liPass').value='';
+    $('#liSave').checked=true;
+    const u=users.find(x=>x.username===savedCred.u);
+    if(u){$('#lastHint').classList.remove('hidden');$('#lastName').textContent=u.name+' (@'+u.username+') — بريدكِ محفوظ، اكتبي كلمة المرور للدخول'}
+    else $('#lastHint').classList.add('hidden');
+  }else{
+    renderLastHintOnly();
+  }
+}
+function renderLastHintOnly(){
+  const last=store.get(LS.l,null);
+  if(!last){$('#lastHint').classList.add('hidden');return}
+  const u=users.find(x=>x.username===last);
+  if(!u){$('#lastHint').classList.add('hidden');return}
+  $('#lastHint').classList.remove('hidden');
+  $('#lastName').textContent=u.name+' (@'+u.username+')';
+  $('#liUser').value=last;
+}
+/* حفظ/إلغاء حفظ بيانات الدخول */
+function storeCred(un,pw,save){
+  if(save){savedCred={u:un};store.set(LS.c,savedCred)}
+  else{savedCred=null;store.set(LS.c,null)}
+}
+
+function esc(s){return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')}
+function escXml(s){return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;')}
+function n(x){try{return new Intl.NumberFormat('ar-EG').format(x)}catch(e){return String(x)}}
+function fmtT(ts){try{return new Intl.DateTimeFormat('ar-EG-u-ca-gregory-nu-arab',{day:'numeric',month:'long',year:'numeric',hour:'numeric',minute:'2-digit'}).format(ts)}catch(e){return new Date(ts).toLocaleString('ar')}}
+function fmtD(ts){try{return new Intl.DateTimeFormat('ar-EG-u-ca-gregory-nu-arab',{day:'numeric',month:'long',year:'numeric'}).format(ts)}catch(e){return new Date(ts).toLocaleDateString('ar')}}
+function fmtNext(ts){try{return new Intl.DateTimeFormat('ar-EG-u-ca-gregory-nu-arab',{weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(ts)}catch(e){return new Date(ts).toLocaleDateString('ar')}}
+function icons(){if(window.lucide){try{lucide.createIcons()}catch(e){}}}
+let toastT=null;
+function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('on');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('on'),3000)}
+function cntWord(c){if(c===0)return'لا مشاركات بعد';if(c===1)return'مرة واحدة';if(c===2)return'مرتين';if(c<=10)return n(c)+' مرات';return n(c)+' مرة'}
+function kb(b){return n(Math.max(1,Math.round(b/1024)))+' ك.ب'}
+function dl(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),2000)}
+function openOvl(el){el.classList.remove('hidden');document.body.style.overflow='hidden';icons()}
+function closeOvl(el){el.classList.add('hidden');document.body.style.overflow=''}
+function copyTxt(t){
+  const fbk=()=>{const ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();
+    try{document.execCommand('copy');toast('نُسخ الرابط — احتفظي به عندكِ')}catch(e){toast('تعذر النسخ — انسخيه يدويًا')}ta.remove()};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(()=>toast('نُسخ الرابط — احتفظي به عندكِ')).catch(fbk)}else fbk();
+}
+ $$('.ltr').forEach(i=>i.addEventListener('input',()=>{const p=i.selectionStart;i.value=i.value.replace(/[^\x21-\x7E]/g,'');try{i.setSelectionRange(p,p)}catch(e){}}));
+
+/* ══ النقاط والأيام المكتملة ══ */
+function pointsOf(un){
+  return entries.filter(e=>e.username===un).reduce((s,e)=>{
+    if(e.type==='puzzle')return s+10;
+    if(e.type==='quiz_admin'||e.type==='quiz_teachers')return s+((e.meta&&e.meta.correct)?15:0);
+    if(e.type.startsWith('q_')||e.type==='takafu'||e.type==='innovation'||e.type==='inspire')return s+5;
+    return s;
+  },0);
+}
+function boardsDone(un){
+  return new Set(entries.filter(e=>e.type==='puzzle'&&e.username===un&&e.meta&&e.meta.board).map(e=>e.meta.board)).size;
+}
+function updateTopInfo(){
+  const u=curUser();if(!u)return;
+  $('#chipPts').textContent='نقاطك: '+n(pointsOf(u.username))+' • لوحات: '+n(boardsDone(u.username))+'/٦';
+}
+
+const TYPES={
+  q_commitment:'بطاقة الالتزام', q_team:'بطاقة روح الفريق', q_creativity:'بطاقة الإبداع',
+  q_learning:'بطاقة التعلم المستمر', q_quality:'بطاقة الجودة',
+  puzzle:'بازل رفاه — سلسلة مكتملة',
+  takafu:'تكافئ — الاحتياجات المساندة', innovation:'الابتكار — تسجيل الأفكار',
+  inspire:'التواصل الملهم — الترشيح', quiz_admin:'سؤال القسم الإداري', quiz_teachers:'سؤال المعلمات'
+};
+const ORDER=['commitment','quality','creativity','team','learning'];
+const QUALITY={
+  commitment:{t:'الالتزام',icon:'shield-check',short:'كلمة منكِ قد تختصر طريقًا',quote:'«من خبرتكِ… اصنعي أثرًا»',
+    body:'كلمة منكِ قد تختصر طريقًا، وتجربتكِ قد تلهم زميلة،\nفلنكن عونًا لبعضنا في الالتزام',
+    ph:'اكتبي عبارة تحثّ زميلاتكِ على الالتزام…'},
+  quality:{t:'الجودة',icon:'award',short:'التزامنا يصنع الفرق',quote:'في مبادرة الجودة… التزامنا يصنع الفرق',
+    body:'الجودة تبدأ من التزام كل واحدة منا بالأنظمة والإجراءات، فكل خطوة صحيحة نلتزم بها تسهم في رفع جودة العمل وبناء بيئة مدرسية أكثر تنظيمًا وتميزًا.\n\nدعوتنا في مبادرة الجودة:\nراجعي إجراءً من إجراءات عملك، طبّقيه بدقة، وشاركي زميلاتك ما يساعدهن على الالتزام به.\n\nمعًا نجعل الالتزام ممارسة يومية، والجودة أثرًا مستدامًا.',
+    ph:'شاركي إجراءً التزمتِ به بدقة… أو ما يساعد زميلاتك على الالتزام به.'},
+  creativity:{t:'الإبداع',icon:'lightbulb',short:'من فكرة بسيطة… إلى أثرٍ ملموس',quote:'من فكرة بسيطة… إلى أثرٍ ملموس',
+    body:'تذكّري موقفًا ابتكرتِ فيه أنتِ أو زميلاتكِ طريقة جديدة لتسهيل العمل، حل مشكلة، تحسين أداء، أو خدمة الطالبات.\nما الفكرة؟ وما المشكلة التي عالجتها؟ وكيف أحدثت فرقًا في المدرسة؟\n\nالإبداع لا يعني أن نبدأ من الصفر… بل أن نرى في المألوف فرصةً لشيء أفضل.',
+    ph:'ما الفكرة؟ وما المشكلة التي عالجتها؟ وكيف أحدثت فرقًا؟'},
+  team:{t:'روح الفريق',icon:'heart-handshake',short:'موقف جمعنا… فصنع فرقًا',quote:'«موقف جمعنا… فصنع فرقًا»',
+    body:'تذكّري موقفًا تعاونتِ فيه مع زميلاتكِ، واحكي لنا كيف كان لروح الفريق أثر في نجاح الموقف',
+    ph:'احكي لنا الموقف… ماذا حدث؟ وكيف صنع التعاون الفرق؟'},
+  learning:{t:'التعلّم المستمر',icon:'graduation-cap',short:'معرفة نتشاركها وأثر يتسع',quote:'التعلّم المستمر… معرفة نتشاركها وأثر يتسع',
+    body:'شارِكينا مادة معرفية قصيرة ومفيدة من خبرتكِ أو مما تعلّمتِه مؤخرًا، يمكن أن يستفيد منها زميلاتكِ في العمل.\n\nمعلومة – فكرة – أداة – تجربة ناجحة – أو مهارة جديدة\n\nفما تتعلمينه اليوم… قد يكون مفتاحًا لنجاح زميلة غدًا.',
+    ph:'معلومة – فكرة – أداة – تجربة ناجحة – أو مهارة جديدة…'}
+};
+const LET=['أ','ب','ج'];
+const QUIZ={
+  admin:{who:'سؤال تدريبي — للقسم الإداري',
+    text:'لاحظت إدارة المدرسة تكرار غياب مجموعة من الطلاب وانخفاض دافعيتهم للمشاركة في اليوم المدرسي. بناءً على مصفوفة الأدوار والتكامل الوظيفي بين التوجيه الطلابي والنشاط والإدارة، ما هو التوزيع الصحيح والتكاملي للمهام بين هذه الأطراف الثلاثة لمعالجة المشكلة؟',
+    opts:[
+      'الإدارية: ترصد الغياب دقيقاً وتوثق البيانات وتنبه ولي الأمر ← الموجه الطلابي: يدعو الطالب ويشخص الأسباب النفسية أو الاجتماعية ويوجه سلوكه ← رائد النشاط: يدمج الطالب في برامج وأنشطة تناسب ميوله لزيادة جودة البيئة المدرسية وانتمائه.',
+      'الموجه الطلابي: يتولى الاتصال بولي الأمر وتوثيق الغياب في النظام ← الإدارية: تعد الخطة العلاجية والسلوكية للطالب ← رائد النشاط: يحرم الطالب من المشاركة في جميع الأنشطة حتى يلتزم بالحضور.',
+      'رائد النشاط: يبحث أسباب غياب الطالب الاجتماعية ← الموجه الطلابي: ينظم المهرجانات والفعاليات المدرسية لإشغال وقت الطالب ← الإدارية: تتولى دراسة الحالة النفسية للطلاب.'
+    ], correct:0,
+    why:'لأن (أ) تحقق التكامل الوظيفي بين الأطراف: الإدارة ترصد وتوثق وتربط بولي الأمر، والموجه الطلابي يشخص الأسباب ويوجه السلوك، ورائد النشاط يعيد بناء الانتماء عبر الأنشطة — كل طرف يؤدي دوره دون تداخل.'},
+  teachers:{who:'سؤال تدريبي — للمعلمات',
+    text:'أظهرت نتائج التقويم التكويني (البنائي) بعد منتصف الوحدة الدراسية وجود فجوة تعليمية وتفاوت كبير في الفصل؛ حيث توجد مجموعة من الطالبات يواجهن صعوبة في استيعاب المفاهيم الأساسية، مقابل مجموعة أخرى متميزة أنجزت المهارة بسرعة وتواجه شعوراً بالملل. وفق المهام المهنية للمعلمة، ما الإجراء التربوي الأنسب للتعامل مع هذا الموقف؟',
+    opts:[
+      'تطبيق استراتيجيات التدريس المتمايز؛ بتصميم أنشطة علاجية مخصصة للتعثر، وتوفير مهام إثرائية للمتميزات، مع إعادة بناء أساليب الشرح وتتبع الأثر قبل الانتقال للوحدة التالية.',
+      'إحالة كافة الطالبات المتعثرات فوراً للموجهة الطلابية للتعامل معهن، والتركيز داخل الصف على شرح المقرر واختتام الخطة الزمانية في موعدها.',
+      'إعادة شرح الوحدة كاملة بالأسلوب المعتاد للفصل بأكمله لتساوي الفرص، مع إسناد مهام تنظيمية وإدارية للطالبات المتميزات لإشغال وقتهن.'
+    ], correct:0,
+    why:'لأن (أ) تجسد جوهر التدريس المتمايز: علاجٌ للمتعثرات، وإثراءٌ للمتميزات، مع تعديل أساليب الشرح وتتبع الأثر — بدلًا من التأجيل أو الإحالة أو إعادة الشرح الجماعي.'}
+};
+const DAYINFO={firstaid:{rule:'sat2sep'},alzheimer:{m:8,d:21},mental:{m:9,d:10},breast:{m:9,d:13},cane:{m:9,d:15},diabetes:{m:10,d:14},human:{m:11,d:10}};
+const DAYS=[
+  {key:'firstaid',name:'اليوم العالمي للإسعافات الأولية',date:'السبت الثاني من سبتمبر — كل عام',icon:'heart-pulse',
+   def:'مساعدة فورية وبسيطة تُقدَّم للمصاب أو المريض قبل وصول الرعاية الطبية؛ تحافظ على الحياة، وتمنع تدهور الحالة، وتخفف الألم والمضاعفات.',
+   note:'الدقائق الأولى بعد الإصابة تُسمّى «الدقائق الذهبية»… تعلّمي خطواتها وكوني أنتِ الفرق.'},
+  {key:'alzheimer',name:'اليوم العالمي للزهايمر',date:'21 سبتمبر — كل عام',icon:'brain',
+   def:'الزهايمر هو أكثر أسباب الخرف شيوعًا؛ مرض عصبي تدريجي يؤثر على الذاكرة والتفكير والسلوك، ويصيب غالبًا كبار السن. التشخيص المبكر يُحدث فرقًا كبيرًا في جودة الحياة.',
+   note:'داعمي كبار السن حولكِ: الصبر، والاحتواء، والمتابعة الطبية المنتظمة.'},
+  {key:'mental',name:'اليوم العالمي للصحة النفسية',date:'10 أكتوبر — كل عام',icon:'flower-2',
+   def:'الصحة النفسية حالة من الرفاه تُمكّننا من التعامل مع ضغوط الحياة، وإدراك قدراتنا، والعمل والتعلم بإنتاجية، والمساهمة في مجتمعنا. الاعتناء بها ليس ترفًا… بل ضرورة.',
+   note:'خمس دقائق تنفّس عميق، ونوم كافٍ، وحديث لطيف مع النفس — ممارسات يومية تصنع فرقًا.'},
+  {key:'breast',name:'اليوم العالمي لسرطان الثدي',date:'13 أكتوبر — ضمن «أكتوبر الوردي»',icon:'ribbon',
+   def:'من أكثر أنواع السرطان شيوعًا بين النساء حول العالم، وفرص الشفاء منه مرتفعة جدًا عند اكتشافه مبكرًا. الفحص الذاتي الشهري والفحص السريري الدوري هما خط الدفاع الأول.',
+   note:'الكشف المبكر يرفع نسبة الشفاء إلى ما يتجاوز 95% — حدّدي موعد فحصكِ الدوري.'},
+  {key:'diabetes',name:'اليوم العالمي للسكري',date:'14 نوفمبر — كل عام',icon:'droplets',
+   def:'مرض مزمن يرتفع فيه مستوى سكر الدم، إما لعدم إنتاج كافٍ من الإنسولين أو لعدم استجابة الجسم له. نمط حياة صحي — غذاء متوازن وحركة يومية — أهم سبل الوقاية من النوع الثاني.',
+   note:'علامات تستدعي الفحص: عطش شديد، تبول متكرر، تعب مستمر، وفقدان في الوزن.'},
+  {key:'human',name:'اليوم العالمي لحقوق الإنسان',date:'10 ديسمبر — كل عام',icon:'scale',
+   def:'يحتفي بذكرى الإعلان العالمي لحقوق الإنسان (1948)، الذي يؤكد أن كل إنسان يولد حرًا متساويًا في الكرامة والحقوق — ومنها الحق في التعليم في بيئة آمنة وعادلة.',
+   note:'مدرستنا أول ميدان لحقوق الطالبات: الأمان، والعدل، والاحترام في كل تفاعل.'}
+];
+
+const countType=t=>entries.filter(e=>e.type===t).length;
+async function addEntry(type,text,meta={}){
+ const u=curUser();if(!u||!cloud()){toast('سجّلي الدخول أولًا');return null}
+ if(saveBusy){toast('انتظري اكتمال حفظ المشاركة الحالية');return null}
+ saveBusy=true;
+ const e={id:crypto.randomUUID(),type,username:u.username,name:u.name,text,meta,ts:Date.now()};
+ try{
+ const saved=await cloud().save(e);e.fid=saved.id;e.id=saved.client_id;
+ if(type.startsWith('quiz_'))entries=entries.filter(x=>!(x.type===type&&x.username===u.username));
+ entries.push(e);updateCounts();refreshBadges();updateTopInfo();renderAdminIfOpen();return e;
+ }catch(err){toast('لم تُحفظ المشاركة: '+err.message+' — أعيدي المحاولة');return null}
+ finally{saveBusy=false}
+}
+async function deleteEntry(id){
+ const e=entries.find(x=>x.id===id);if(!e?.fid)return;
+ try{await cloud().remove(e.fid);entries=entries.filter(x=>x.id!==id);syncUI();toast('حُذفت المشاركة')}
+ catch(err){toast('تعذر الحذف: '+err.message)}
+}
+
+function attsOf(e){return (e.meta&&e.meta.atts)||[]}
+function detailsOf(e){
+  const m=e.meta||{};
+  switch(e.type){
+    case 'takafu':return 'نوع الاحتياج: '+(m.kind||'—');
+    case 'innovation':return 'الفكرة: '+(m.title||'—')+' • المجال: '+(m.field||'—');
+    case 'inspire':return 'المرشحة: '+(m.person||'—')+' • النطاق: '+(m.scope||'—');
+    case 'puzzle':return 'السلسلة: '+(m.boardName||'—')+' • المحاولات: '+n(m.moves||0)+' • الزمن: '+n(m.time||0)+' ث • +١٠ نقاط';
+    case 'quiz_admin':case 'quiz_teachers':return 'اختيارها: ('+(m.choice||'—')+') • '+(m.correct?'إجابة صحيحة (+١٥ نقطة)':'إجابة غير صحيحة');
+    default:{
+      const a=attsOf(e);
+      if(a.length){const c=t=>a.filter(x=>x.type===t).length,parts=[];
+        if(c('image'))parts.push('صور ('+n(c('image'))+')');if(c('audio'))parts.push('تسجيل صوتي ('+n(c('audio'))+')');if(c('file'))parts.push('ملفات ('+n(c('file'))+')');
+        return 'مرفقات: '+parts.join(' · ')}
+      return '';
+    }
+  }
+}
+
+const ROT=[-1.4,1,-0.8,1.2,-1], TY=[10,0,20,6,14];
+function renderPlaques(){
+  $('#plqRow').innerHTML=ORDER.map((k,i)=>{const q=QUALITY[k];return `
+    <div class="plaque ${k==='quality'?'feat':''}" style="--rt:${ROT[i]}deg;--ty:${TY[i]}px" data-k="${k}">
+      <i class="str s1"></i><i class="str s2"></i><i class="nail"></i>
+      <div class="plq-icon"><i data-lucide="${q.icon}"></i></div>
+      <div class="plq-t">${q.t}</div>
+      <div class="plq-q">${q.short}</div>
+      <div class="plq-c" data-c="${k}"></div>
+      <div class="plq-go">شاركي الآن <i data-lucide="arrow-left"></i></div>
+    </div>`}).join('');
+  icons(); updateCounts();
+}
+function updateCounts(){
+  ORDER.forEach(k=>{
+    const el=document.querySelector('[data-c="'+k+'"]');
+    if(el) el.textContent=cntWord(countType('q_'+k));
+  });
+}
+
+let atts=[];
+const MAXATT=8, MAXFILE=1.5*1024*1024, MAXREC=100;
+function renderAtts(){
+  $('#attChips').innerHTML=atts.map((a,i)=>`
+    <div class="atchip">
+      ${a.type==='image'?`<img src="${a.data}" alt="">`:`<i data-lucide="${a.type==='audio'?'audio-lines':'file'}" style="color:var(--gold)"></i>`}
+      <div class="an"><b>${esc(a.name)}</b><div class="as">${a.type==='image'?'صورة':a.type==='audio'?'تسجيل صوتي':'ملف'} · ${kb(a.size)}</div></div>
+      <button type="button" class="ibtn" data-rm="${i}" style="width:28px;height:28px"><i data-lucide="x"></i></button>
+    </div>`).join('');
+  icons();
+}
+ $('#attChips').addEventListener('click',e=>{
+  const b=e.target.closest('[data-rm]');if(!b)return;
+  atts.splice(+b.dataset.rm,1);renderAtts();
+});
+function compressImage(file){
+  return new Promise(res=>{
+    const img=new Image();
+    img.onload=()=>{
+      try{
+        const M=1000,s=Math.min(1,M/Math.max(img.width,img.height));
+        const c=document.createElement('canvas');
+        c.width=Math.round(img.width*s);c.height=Math.round(img.height*s);
+        c.getContext('2d').drawImage(img,0,0,c.width,c.height);
+        URL.revokeObjectURL(img.src);
+        res(c.toDataURL('image/jpeg',.72));
+      }catch(e){res(null)}
+    };
+    img.onerror=()=>res(null);
+    img.src=URL.createObjectURL(file);
+  });
+}
+async function addImage(file){
+  const data=await compressImage(file);
+  if(!data){toast('تعذّر قراءة الصورة');return}
+  atts.push({type:'image',name:file.name,size:Math.round(data.length*0.75),data});renderAtts();
+}
+ $('#fImg').addEventListener('change',async e=>{
+  const fs=[...e.target.files];e.target.value='';
+  for(const f of fs){
+    if(atts.length>=MAXATT){toast('الحد الأقصى '+n(MAXATT)+' مرفقات');break}
+    await addImage(f);
+  }
+});
+ $('#btnImg').onclick=()=>$('#fImg').click();
+ $('#fFile').addEventListener('change',e=>{
+  const f=e.target.files[0];e.target.value='';if(!f)return;
+  if(atts.length>=MAXATT){toast('الحد الأقصى '+n(MAXATT)+' مرفقات');return}
+  if(f.size>MAXFILE){toast('حجم الملف كبير — الحد ١.٥ ميغابايت');return}
+  const r=new FileReader();
+  r.onload=()=>{atts.push({type:'file',name:f.name,size:f.size,data:r.result});renderAtts();toast('أُضيف الملف')};
+  r.onerror=()=>toast('تعذّر قراءة الملف');
+  r.readAsDataURL(f);
+});
+ $('#btnFile').onclick=()=>$('#fFile').click();
+let rec=null,recChunks=[],recTimer=null,recSec=0,recStream=null;
+const recSupported=()=>!!(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&window.MediaRecorder);
+function recUI(on){$('#recBox').classList.toggle('on',!!on);$('#attBar').classList.toggle('recording',!!on)}
+function startRec(){
+  if(!recSupported()){
+    toast('التسجيل غير مدعوم هنا — اختاري ملفًا صوتيًا من جهازك');
+    $('#fAudio').click();return;
+  }
+  if(atts.length>=MAXATT){toast('الحد الأقصى '+n(MAXATT)+' مرفقات');return}
+  navigator.mediaDevices.getUserMedia({audio:true}).then(stream=>{
+    recStream=stream;recChunks=[];
+    try{rec=new MediaRecorder(stream)}catch(e){toast('تعذر بدء التسجيل');return}
+    rec.ondataavailable=ev=>{if(ev.data&&ev.data.size)recChunks.push(ev.data)};
+    rec.onstop=()=>{
+      recStream.getTracks().forEach(t=>t.stop());
+      const b=new Blob(recChunks,{type:rec.mimeType||'audio/webm'});
+      if(!b.size){toast('التسجيل فارغ — حاولي مجددًا');return}
+      if(b.size>MAXFILE){toast('التسجيل طويل — الحد ١.٥ ميغابايت (نحو ١٠٠ ثانية)');return}
+      const r=new FileReader();
+      r.onload=()=>{atts.push({type:'audio',name:'تسجيل صوتي — '+fmtD(Date.now()),size:b.size,data:r.result});renderAtts();toast('أُضيف التسجيل الصوتي')};
+      r.readAsDataURL(b);
+    };
+    rec.start();recSec=0;recUI(true);
+    $('#recT').textContent='00:00';
+    recTimer=setInterval(()=>{
+      recSec++;
+      $('#recT').textContent=String(Math.floor(recSec/60)).padStart(2,'0')+':'+String(recSec%60).padStart(2,'0');
+      if(recSec>=MAXREC)stopRec();
+    },1000);
+  }).catch(()=>toast('لم يُسمح بالوصول إلى المايكروفون — اسمحي به من إعدادات المتصفح'));
+}
+function stopRec(){
+  if(rec&&rec.state!=='inactive'){try{rec.stop()}catch(e){}}
+  clearInterval(recTimer);recUI(false);
+}
+ $('#btnRec').onclick=startRec;
+ $('#btnRecStop').onclick=stopRec;
+ $('#fAudio').addEventListener('change',e=>{
+  const f=e.target.files[0];e.target.value='';if(!f)return;
+  if(atts.length>=MAXATT){toast('الحد الأقصى '+n(MAXATT)+' مرفقات');return}
+  if(f.size>MAXFILE){toast('حجم الملف الصوتي كبير — الحد ١.٥ ميغابايت');return}
+  const r=new FileReader();
+  r.onload=()=>{atts.push({type:'audio',name:f.name,size:f.size,data:r.result});renderAtts();toast('أُضيف الملف الصوتي')};
+  r.readAsDataURL(f);
+});
+
+let mKey=null,lastEntry=null;
+function openModal(k){
+  mKey=k;const q=QUALITY[k];
+  $('#mTitle').textContent=q.t;$('#mQuote').textContent=q.quote;$('#mBody').textContent=q.body;
+  $('#mText').value='';$('#mErr').textContent='';atts=[];renderAtts();recUI(false);stopRec();
+  $('#mFormWrap').classList.remove('hidden');$('#mDone').classList.add('hidden');
+  $('#mSendT').textContent='تسجيل المشاركة';$('#mSend').disabled=false;
+  openOvl($('#ovl'));
+  setTimeout(()=>$('#mText').focus(),100);
+}
+ $('#mClose').onclick=()=>closeOvl($('#ovl'));
+ $('#mClose2').onclick=()=>closeOvl($('#ovl'));
+ $('#ovl').addEventListener('click',e=>{if(e.target.id==='ovl')closeOvl($('#ovl'))});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#pzOvl').classList.contains('hidden'))return;if(e.key==='Escape')$$('.ovl:not(.hidden)').forEach(o=>closeOvl(o))});
+ $('#plqRow').addEventListener('click',e=>{const p=e.target.closest('.plaque');if(p)openModal(p.dataset.k)});
+ $('#mSend').addEventListener('click',async()=>{
+  const t=$('#mText').value.trim();
+  if(t.length<5&&atts.length===0){$('#mErr').textContent='اكتبي رسالتكِ أو أرفقي صورة/ملف/تسجيلًا صوتيًا.';return}
+  if(rec&&rec.state==='recording'){$('#mErr').textContent='اضغطي «إيقاف التسجيل» أولًا ثم أرسلي.';return}
+  $('#mErr').textContent='';$('#mSend').disabled=true;$('#mSendT').textContent='جارٍ الحفظ…';
+  const e=await addEntry('q_'+mKey,t||'(مشاركة بمرفقات فقط)',{atts});
+  if(!e){$('#mSend').disabled=false;$('#mSendT').textContent='تسجيل المشاركة';return}
+  lastEntry=e;
+  $('#mDoneT').textContent='حُفظت مشاركتك (+٥ نقاط) — احتفظي برابطها كإثبات.';
+  $('#mFormWrap').classList.add('hidden');$('#mDone').classList.remove('hidden');icons();
+  toast('سُجّلت مشاركتك +٥ نقاط');
+});
+ $('#mAgain').addEventListener('click',()=>{
+  $('#mText').value='';$('#mErr').textContent='';atts=[];renderAtts();
+  $('#mDone').classList.add('hidden');$('#mFormWrap').classList.remove('hidden');
+  setTimeout(()=>$('#mText').focus(),60);
+});
+ $('#mCopy').addEventListener('click',()=>{if(lastEntry)copyTxt(entryURL(lastEntry))});
+
+function entryURL(e){return window.parent.location.origin+'/#p='+e.id}
+let rcEntry=null;
+function showReceipt(e,fresh){
+  rcEntry=e;
+  const a=attsOf(e);
+  const lines=[
+    ['الاسم',e.name],
+    ['القسم',TYPES[e.type]||e.type],
+    ['التفاصيل',detailsOf(e)||'—'],
+    ['النص',(e.text&&e.text!=='(مشاركة بمرفقات فقط)')?e.text:'—'],
+    ['المرفقات',a.length?n(a.length)+' مرفق ('+a.map(x=>x.name).join('، ')+')':'—'],
+    ['التاريخ',fmtT(e.ts)]
+  ];
+  $('#rcBody').innerHTML=lines.map(l=>`<div class="rc-line"><b>${l[0]}</b><span>${esc(l[1])}</span></div>`).join('')+
+    `<div class="aen" style="text-align:center;margin-top:10px">هذا الرابط يفتح إيصال مشاركتك من أي جهاز عليه الموقع: <span dir="ltr" style="word-break:break-all">${esc(entryURL(e))}</span></div>`;
+  openOvl($('#rcOvl'));
+}
+ $('#rcClose').onclick=()=>closeOvl($('#rcOvl'));
+ $('#rcClose2').onclick=()=>closeOvl($('#rcOvl'));
+ $('#rcOvl').addEventListener('click',e=>{if(e.target.id==='rcOvl')closeOvl($('#rcOvl'))});
+ $('#rcCopy').onclick=()=>{if(rcEntry)copyTxt(entryURL(rcEntry))};
+ $('#rcPrint').onclick=()=>{
+  if(!rcEntry)return;
+  const e=rcEntry,a=attsOf(e);
+  const w=window.open('','_blank');
+  if(!w){toast('المتصفح منع النافذة');return}
+  w.document.write(`<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><title>إيصال مشاركة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <style>body{font-family:'IBM Plex Sans Arabic',sans-serif;color:#1C2B2E;padding:36px;max-width:720px;margin:auto;line-height:2}
+  h1{font-family:'Aref Ruqaa',serif;color:#075059;font-size:26px;margin:0 0 2px}.sub{color:#888;font-size:12px;margin-bottom:18px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  td{border-bottom:1px solid #DBE5E2;padding:10px 12px;vertical-align:top}td.k{color:#0B7D8A;font-weight:700;width:110px}
+  .sig{margin-top:34px;text-align:center;font-family:'Aref Ruqaa',serif;color:#B08A2E;font-size:19px;line-height:1.8}</style></head><body>
+  <h1>وزارة التعليم — الثقافة المؤسسية</h1><div class="sub">إيصال مشاركة موثقة — ${esc(fmtT(Date.now()))}</div>
+  <table>
+  <tr><td class="k">الاسم</td><td>${esc(e.name)}</td></tr>
+  <tr><td class="k">القسم</td><td>${esc(TYPES[e.type]||'')}</td></tr>
+  <tr><td class="k">التفاصيل</td><td>${esc(detailsOf(e)||'—')}</td></tr>
+  <tr><td class="k">النص</td><td>${esc((e.text&&e.text!=='(مشاركة بمرفقات فقط)')?e.text:'—')}</td></tr>
+  <tr><td class="k">المرفقات</td><td>${a.length?esc(n(a.length)+' مرفق — '+a.map(x=>x.name).join('، ')):'—'}</td></tr>
+  <tr><td class="k">التاريخ</td><td>${esc(fmtT(e.ts))}</td></tr>
+  <tr><td class="k">رابط المشاركة</td><td dir="ltr" style="word-break:break-all;font-size:11.5px">${esc(entryURL(e))}</td></tr>
+  </table>
+  <div class="sig">منسقة الثقافة المؤسسية<br>عواطف عبدالله محمد آل عبدالله</div></body></html>`);
+  w.document.close();
+  setTimeout(()=>{try{w.focus();w.print()}catch(err){}},700);
+};
+function handleHash(){
+  const m=window.parent.location.hash.match(/^#p=([\w-]+)$/);if(!m||!session)return;
+  const id=m[1];
+  const find=()=>entries.find(e=>e.id===id);
+  const e=find();
+  if(e){showReceipt(e,false);return}
+  if(cloudOn){
+    toast('جارٍ البحث عن المشاركة…');
+    setTimeout(()=>{const f=find();f?showReceipt(f,false):toast('لم نجد المشاركة — تأكدي من صحة الرابط')},3500);
+  }else toast('لم نجد المشاركة على هذا الجهاز — افتحي رابط الموقع الرسمي نفسه');
+}
+
+const WROT=[-1.5,1,-0.6,1.2,-1,0.8,-1.2,0.5], WTY=[8,0,12,4,14,6,10,2];
+function renderWelcome(){
+  $('#wNames').innerHTML=welcome.map((nm,i)=>`
+    <div class="nameplate" style="--rt:${WROT[i%8]}deg;--ty:${WTY[i%8]}px"><i class="np-dia"></i>
+    <div class="np-name">${esc(nm)}</div><div class="np-sub">معلمة تنضم إلى أسرتنا التعليمية</div></div>`).join('');
+}
+function wRowBuild(val){
+  const d=document.createElement('div');d.className='wrow';
+  d.innerHTML=`<input value="${esc(val||'')}" placeholder="اسم المعلمة"><button type="button" class="ibtn" title="حذف"><i data-lucide="trash-2"></i></button>`;
+  d.querySelector('.ibtn').onclick=()=>{d.remove();if(!$('#wRows').children.length)wAddRow('')};
+  return d;
+}
+function wAddRow(v){$('#wRows').appendChild(wRowBuild(v));icons()}
+ $('#wEdit').onclick=()=>{$('#wRows').innerHTML='';welcome.forEach(nm=>wAddRow(nm));icons();openOvl($('#wOvl'))};
+ $('#wAdd').onclick=()=>wAddRow('');
+ $('#wClose').onclick=()=>closeOvl($('#wOvl'));
+ $('#wOvl').addEventListener('click',e=>{if(e.target.id==='wOvl')closeOvl($('#wOvl'))});
+ $('#wSave').onclick=async()=>{
+  const list=[...$('#wRows').querySelectorAll('input')].map(i=>i.value.trim()).filter(v=>v.length>=2);
+  if(!list.length){toast('أدخلي اسمًا واحدًا على الأقل');return}
+  welcome=list;if(await saveCloudConfig()){saveAll();renderWelcome();closeOvl($('#wOvl'))}
+};
+
+const VKEYS=['firstaid','alzheimer','mental','breast','diabetes','human'];
+function ytId(url){
+  url=String(url||'').trim();
+  const m=url.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/|live\/|embed\/)|youtu\.be\/)([\w-]{11})/);
+  return m?m[1]:'';
+}
+function toEmbed(url){
+  if(!url)return'';
+  url=url.trim();
+  let m=url.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/|live\/|embed\/)|youtu\.be\/)([\w-]{6,})/);
+  if(m)return'https://www.youtube-nocookie.com/embed/'+m[1];
+  m=url.match(/vimeo\.com\/(\d+)/);
+  if(m)return'https://player.vimeo.com/video/'+m[1];
+  m=url.match(/drive\.google\.com\/file\/d\/([\w-]+)/);
+  if(m)return'https://drive.google.com/file/d/'+m[1]+'/preview';
+  return url;
+}
+function videoBox(key){
+  const raw=String(videos[key]||DEF_VIDEOS[key]||'').trim();
+  if(!/^https?:\/\//i.test(raw))return`<div class="vph"><i data-lucide="clapperboard"></i><p>الفيديو قيد الإضافة</p></div>`;
+  const id=ytId(raw);
+  if(id)return`<div class="vplay" data-yt="${esc(id)}"><img src="https://i.ytimg.com/vi/${esc(id)}/hqdefault.jpg" alt="صورة الفيديو" loading="lazy"><span class="vplaybtn"><i data-lucide="play"></i></span></div>`;
+  const u=toEmbed(raw);
+  if(/\.(mp4|webm|ogg)(\?|#|$)/i.test(u))return`<video controls preload="metadata" src="${esc(u)}"></video>`;
+  return`<iframe src="${esc(u)}" title="فيديو" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
+}
+function renderVideos(){
+  $('#vids').innerHTML=DAYS.map(d=>{
+    const raw=String(videos[d.key]||DEF_VIDEOS[d.key]||'').trim();
+    const id=ytId(raw);
+    const ext=id?('https://youtu.be/'+id):raw;
+    return`<div class="vid">
+      <div class="vh"><h4>${d.name}</h4>
+      <div class="vdrow"><span class="vd">${d.date}</span>${ext?`<a class="vext" href="${esc(ext)}" target="_blank" rel="noopener" title="فتح الفيديو في نافذة مستقلة"><i data-lucide="external-link"></i></a>`:''}</div></div>
+      <div class="vbox">${videoBox(d.key)}</div>
+    </div>`}).join('');
+  icons();
+}
+ $('#vids').addEventListener('click',e=>{
+  const p=e.target.closest('.vplay');if(!p)return;
+  const id=p.dataset.yt;
+  p.outerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${esc(id)}?autoplay=1&rel=0" title="فيديو" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>`;
+});
+ $('#vEdit').onclick=()=>{
+  $('#vRows').innerHTML=DAYS.map(d=>`
+    <div class="field"><label>${d.name} — ${d.date}</label>
+    <input class="ltr" id="v_${d.key}" value="${esc(videos[d.key]||'')}" dir="ltr" placeholder="${esc(DEF_VIDEOS[d.key]||'https://…')}"></div>`).join('');
+  openOvl($('#vOvl'));
+};
+ $('#vClose').onclick=()=>closeOvl($('#vOvl'));
+ $('#vOvl').addEventListener('click',e=>{if(e.target.id==='vOvl')closeOvl($('#vOvl'))});
+ $('#vSave').onclick=async()=>{
+  videos={};VKEYS.forEach(k=>{const v=$('#v_'+k).value.trim();if(v)videos[k]=v});
+  if(await saveCloudConfig()){saveAll();renderVideos();closeOvl($('#vOvl'))}
+};
+
+ $('#takForm').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const k=$('#takKind').value,t=$('#takText').value.trim(),err=$('#takErr');
+  if(!k){err.textContent='اختاري نوع الاحتياج أولًا.';return}
+  if(t.length<5){err.textContent='اكتبي وصفًا للاحتياج (٥ أحرف على الأقل).';return}
+  err.textContent='';
+  const en=await addEntry('takafu',t,{kind:k});
+  if(en){e.target.reset();showReceipt(en,true);toast('سُجّل طلبكِ +٥ نقاط — بسرّية تامة')}
+});
+ $('#innoForm').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const t=$('#innoTitle').value.trim(),f=$('#innoField').value,d=$('#innoText').value.trim(),err=$('#innoErr');
+  if(t.length<3||d.length<10){err.textContent='اكتبي عنوان الفكرة ووصفًا واضحًا (١٠ أحرف على الأقل).';return}
+  err.textContent='';
+  const en=await addEntry('innovation',d,{title:t,field:f});
+  if(en){e.target.reset();showReceipt(en,true);toast('سُجّلت فكرتك +٥ نقاط — بالتوفيق')}
+});
+ $('#insForm').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const p=$('#insName').value.trim(),r=$('#insReason').value.trim(),err=$('#insErr');
+  const sc=(document.querySelector('input[name="inScope"]:checked')||{}).value||'';
+  if(p.length<3){err.textContent='اكتبي اسم المعلمة المرشَّحة.';return}
+  if(r.length<10){err.textContent='اكتبي سبب الترشيح (١٠ أحرف على الأقل).';return}
+  err.textContent='';
+  const en=await addEntry('inspire',r,{person:p,scope:sc});
+  if(en){e.target.reset();showReceipt(en,true);toast('أُرسل ترشيحك +٥ نقاط — شكرًا لك')}
+});
+
+const selState={admin:-1,teachers:-1};
+function renderQuiz(){
+  Object.keys(QUIZ).forEach(k=>{
+    const q=QUIZ[k];
+    const el=document.createElement('div');el.className='quiz rv';el.dataset.k=k;
+    el.innerHTML=`<span class="qwho">${q.who}</span><p class="qtext">${esc(q.text)}</p>
+      <div class="qopts">${q.opts.map((o,i)=>`<button type="button" class="opt" data-i="${i}"><b class="let">${LET[i]}</b><span>${esc(o)}</span></button>`).join('')}</div>
+      <div class="qact"><span class="ferr"></span><button type="button" class="btn qconfirm" disabled>تأكيد الإجابة</button></div>
+      <div class="qres hidden"></div>`;
+    $('#quizWrap').appendChild(el);
+    el.addEventListener('click',e=>{
+      const o=e.target.closest('.opt');if(!o)return;
+      selState[k]=+o.dataset.i;
+      el.querySelectorAll('.opt').forEach(x=>x.classList.toggle('sel',x===o));
+      el.querySelector('.qconfirm').disabled=false;
+      el.querySelector('.qres').classList.add('hidden');
+    });
+    el.querySelector('.qconfirm').addEventListener('click',()=>{if(selState[k]>=0)submitQuiz(k)});
+  });
+}
+async function submitQuiz(k,silent){
+  const q=QUIZ[k],el=document.querySelector('.quiz[data-k="'+k+'"]'),idx=selState[k],ok=idx===q.correct;
+  const u=curUser();if(!u)return;
+  const t='quiz_'+k;
+  if(!silent){
+   el.querySelector('.qconfirm').disabled=true;
+   const saved=await addEntry(t,q.opts[idx],{choice:LET[idx],correct:ok});
+   if(!saved){el.querySelector('.qconfirm').disabled=false;return}
+  }
+
+  const res=el.querySelector('.qres');
+  res.className='qres '+(ok?'ok':'no');
+  res.innerHTML=(ok?'<b>أحسنتِ! إجابة صحيحة (+١٥ نقاط).</b> ':'<b>ليست الإجابة الأنسب — الإجابة الصحيحة هي (أ).</b> ')+esc(q.why)+'<span class="qnote">سُجّلت إجابتك، ويمكنك تعديلها وإعادة التأكيد.</span>';
+  el.querySelector('.qconfirm').disabled=true;
+  if(!silent)toast(ok?'أحسنتِ! +١٥ نقطة':'سُجّلت إجابتك');
+  updateTopInfo();renderAdminIfOpen();
+}
+function applyQuizPrefill(){
+  ['admin','teachers'].forEach(k=>{
+    const e=entries.find(x=>x.type==='quiz_'+k&&x.username===session);if(!e)return;
+    const idx=LET.indexOf(e.meta.choice);if(idx<0)return;
+    const el=document.querySelector('.quiz[data-k="'+k+'"]');
+    selState[k]=idx;
+    el.querySelectorAll('.opt').forEach(x=>x.classList.toggle('sel',+x.dataset.i===idx));
+    submitQuiz(k,true);
+  });
+}
+
+let rIdx=0,rEl=0,rPlay=false;const RDUR=7000;
+function setDay(i){
+  const d=DAYS[i];
+  $('#rName').textContent=d.name;$('#rDate').textContent=d.date;
+  $('#rDef').textContent=d.def;$('#rNote').textContent=d.note;
+  $('#rIcon').innerHTML=`<i data-lucide="${d.icon}"></i>`;
+  $('#rCdHost').dataset.cd=d.key;
+  tickCDs();icons();
+}
+function paintSegs(){
+  $$('#rSegs .seg').forEach((s,i)=>{
+    s.querySelector('i').style.width=i<rIdx?'100%':(i===rIdx?(rEl/RDUR*100)+'%':'0');
+  });
+}
+function go(i){
+  rIdx=(i+DAYS.length)%DAYS.length;rEl=0;paintSegs();
+  const st=$('#rStage');st.classList.add('fade');
+  setTimeout(()=>{setDay(rIdx);st.classList.remove('fade');paintSegs()},260);
+}
+function setPlayIcon(){$('#rPlay').innerHTML=`<i data-lucide="${rPlay?'pause':'play'}"></i>`;icons()}
+function initReel(){
+  $('#rSegs').innerHTML=DAYS.map((d,i)=>`<div class="seg" data-i="${i}" title="${d.name}"><i></i></div>`).join('');
+  $('#rSegs').addEventListener('click',e=>{const s=e.target.closest('.seg');if(s)go(+s.dataset.i)});
+  $('#rPrev').onclick=()=>go(rIdx-1);
+  $('#rNext').onclick=()=>go(rIdx+1);
+  $('#rPlay').onclick=()=>{rPlay=!rPlay;setPlayIcon()};
+  setDay(0);paintSegs();
+  setInterval(()=>{if(rPlay){rEl+=60;if(rEl>=RDUR)go(rIdx+1);else paintSegs()}},60);
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(en=>{if(en[0].isIntersecting){rPlay=true;setPlayIcon();io.disconnect()}},{threshold:.35});
+    io.observe($('#sec-reel'));
+  }else{rPlay=true;setPlayIcon()}
+}
+
+function secondSat(y){const d=new Date(y,8,1);const off=(6-d.getDay()+7)%7;return new Date(y,8,1+off+7)}
+function nextOccur(k){
+  const info=DAYINFO[k],now=new Date();
+  const t0=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  let t;
+  if(info.rule==='sat2sep'){t=secondSat(now.getFullYear());if(t<t0)t=secondSat(now.getFullYear()+1)}
+  else{t=new Date(now.getFullYear(),info.m,info.d);if(t<t0)t=new Date(now.getFullYear()+1,info.m,info.d)}
+  return{t,t0};
+}
+function renderCD(el,k){
+  if(!k||!el)return;
+  const{t,t0}=nextOccur(k);
+  const when=`الموعد القادم: <b>${fmtNext(t)}</b>`;
+  if(t.getTime()===t0.getTime()){el.innerHTML=`<div class="cdtoday">${when} — اليوم هو يومُه</div>`;return}
+  const s=Math.max(0,Math.floor((t-Date.now())/1000));
+  const dd=Math.floor(s/86400),hh=Math.floor(s%86400/3600),mm=Math.floor(s%3600/60),ss=s%60;
+  el.innerHTML=`<div class="cdwhen">${when}</div>
+  <div class="cdb">
+    <div class="u"><b>${n(dd)}</b><span>يوم</span></div>
+    <div class="u"><b>${n(hh)}</b><span>ساعة</span></div>
+    <div class="u"><b>${n(mm)}</b><span>دقيقة</span></div>
+    <div class="u"><b>${n(ss)}</b><span>ثانية</span></div>
+  </div>`;
+}
+function tickCDs(){$$('[data-cd]').forEach(el=>renderCD(el,el.dataset.cd))}
+setInterval(tickCDs,1000);
+
+/* ═══════════════════════════════════════════════════════════════
+   بازل رفاه — v2
+   - القطع بلا أرقام: المطابقة بالمعنى (القيمة ← اسم دورها)
+   - الشكل لا يكشف الجواب: القطع الوسطى الثلاث متطابقة الشكل
+   - النص لا يُقصّ أبدًا: يلتف حتى ٣ أسطر ثم يوسّع العرض
+   - جوال: تخطيط عمودي بدل التصغير بـ scale
+   - النقاط: أول إتمام لكل سلسلة فقط، وتنقص بالتلميح والأخطاء
+   - تركيب تلقائي للإدارة فقط، ولا يُسجَّل
+   استبدلي كل ما بين هذا التعليق وتعليق «الدخول» بهذا الملف
+═══════════════════════════════════════════════════════════════ */
+const PZ={KN:42,NECK:13,HEAD:30,H1:10,H2:21,H3:28,MG:36,R:7};
+const PZ_DIM={h:{w:135,h:190},v:{w:300,h:96}};
+const DAY_LABELS=['التعريف','الموعد','الدور','الإجراء','الأثر'];
+const DAY_DESC='اقرئي القطع الخمس، وضعي كل واحدة في الخانة التي تصف دورها: تعريف، موعد، دور، إجراء، أثر.';
+
+const BOARDS=[
+  {key:'firstaid',icon:'cross',cls:'acc-red',date:'السبت الثاني من سبتمبر',cd:'firstaid',
+   title:'اليوم العالمي للإسعافات الأولية',desc:DAY_DESC,labels:DAY_LABELS,
+   colors:['#F9E2DE','#F4D3CD','#EEC2BB','#E7B1A9','#DFA096'],
+   chain:['اليوم العالمي للإسعافات الأولية','السبت الثاني من سبتمبر كل عام','التأكد من السلامة وتقييم الحالة أولًا','طلب الإسعاف فورًا على الرقم 997','الدقائق الذهبية تنقذ حياة إنسان']},
+  {key:'mental',icon:'flower-2',cls:'acc-teal',date:'10 أكتوبر',cd:'mental',
+   title:'اليوم العالمي للصحة النفسية',desc:DAY_DESC,labels:DAY_LABELS,
+   colors:['#E1F0ED','#D5EAE5','#C8E4DD','#BBD8CE','#AECCBF'],
+   chain:['اليوم العالمي للصحة النفسية','10 أكتوبر من كل عام','العناية اليومية بالنفس دون توقف','تنفّس عميق ونوم كافٍ وحديث صادق','صفاء ذهني ومزاج أفضل وحياة أهدأ']},
+  {key:'diabetes',icon:'droplets',cls:'acc-blue',date:'14 نوفمبر',cd:'diabetes',
+   title:'اليوم العالمي للسكري',desc:DAY_DESC,labels:DAY_LABELS,
+   colors:['#E4EAF4','#D6E0EE','#C8D6E8','#BACBE2','#ACC0DC'],
+   chain:['اليوم العالمي للسكري','14 نوفمبر من كل عام','الوقاية بنمط حياة صحي ومتوازن','فحص مبكر والتزام دائم بالعلاج','مضاعفات أقل وحياة أطول وأفضل']},
+  {key:'breast',icon:'ribbon',cls:'acc-rose',date:'13 أكتوبر — أكتوبر الوردي',cd:'breast',
+   title:'اليوم العالمي لسرطان الثدي',desc:DAY_DESC,labels:DAY_LABELS,
+   colors:['#F9E3EA','#F4D4DF','#EEC5D3','#E7B6C8','#E0A7BD'],
+   chain:['اليوم العالمي لسرطان الثدي','13 أكتوبر — شهر أكتوبر الوردي','الكشف المبكر الذاتي والسريري','فحص دوري لدى المختص حسب التوصيات','فرص الشفاء ترتفع كثيرًا بالاكتشاف المبكر']},
+  {key:'officials',icon:'at-sign',cls:'acc-gold',date:'دائم',cd:'',
+   title:'الحسابات الرسمية للصحة',desc:'اقرئي القطع الخمس، وضعي كل واحدة في خانتها: الرقم، الجهة، الدور، الخدمة، الأثر.',
+   labels:['الرقم','الجهة','الدور','الخدمة','الأثر'],
+   colors:['#F3EFDF','#EFE9CE','#E8DFBA','#E0D4A4','#D8C98C'],
+   chain:['الرقم الموحّد 937','وزارة الصحة السعودية','تقديم الاستشارات والخدمات الصحية','خدمة متاحة على مدار الساعة','وعي صحي يصل للجميع أولًا بأول']},
+  {key:'goals',icon:'target',cls:'acc-gold',date:'دائم',cd:'',
+   title:'الهدف من تفعيل الأيام العالمية',desc:'اقرئي القطع الخمس، وضعي كل واحدة في خانتها: التعريف، الجهة، الدور، الخدمة، الأثر.',
+   labels:['التعريف','الجهة','الدور','الخدمة','الأثر'],
+   colors:['#F3ECDB','#EFE4C8','#E9DAB2','#E2CF9C','#DBC486'],
+   chain:['تفعيل الأيام العالمية في المدرسة','برنامج رفاه بإشراف المنسقية','نشر الوعي الصحي الموثوق للجميع','لوحات وأنشطة تثقيفية تفاعلية','سلوك وقائي راسخ وانتماء مؤسسي']}
+];
+
+/* ── هندسة القطعة: ١ نتوء للخارج، -١ فتحة للداخل، ٠ حافة مستقيمة ── */
+function pzJig(p,q,type){
+  const dx=q.x-p.x,dy=q.y-p.y,L=Math.hypot(dx,dy);
+  if(!type)return` L ${q.x.toFixed(1)} ${q.y.toFixed(1)}`;
+  const tx=dx/L,ty=dy/L,nx=ty,ny=-tx,m=L/2,a=PZ.KN,b=PZ.NECK,c=PZ.HEAD,H1=PZ.H1,H2=PZ.H2,H3=PZ.H3;
+  const pt=(u,v)=>(p.x+tx*u+nx*v*type).toFixed(1)+' '+(p.y+ty*u+ny*v*type).toFixed(1);
+  return ` L ${pt(m-a,0)}`
+    +` C ${pt(m-a+7,2)} ${pt(m-b,4)} ${pt(m-b,H1)}`
+    +` C ${pt(m-b,H1+7)} ${pt(m-c,H1+2)} ${pt(m-c,H2)}`
+    +` C ${pt(m-c,H2+10)} ${pt(m-8,H3)} ${pt(m,H3)}`
+    +` C ${pt(m+8,H3)} ${pt(m+c,H2+10)} ${pt(m+c,H2)}`
+    +` C ${pt(m+c,H1+2)} ${pt(m+b,H1+7)} ${pt(m+b,H1)}`
+    +` C ${pt(m+b,4)} ${pt(m+a-7,2)} ${pt(m+a,0)}`
+    +` L ${pt(L,0)}`;
+}
+/* e = [أعلى، يمين، أسفل، يسار] — الزوايا مدوّرة فعلًا (الحافة تنتهي قبل الزاوية بمقدار R) */
+function pzPath(w,h,e){
+  const R=PZ.R;
+  return `M ${R} 0`
+    +pzJig({x:R,y:0},{x:w-R,y:0},e[0])+` Q ${w} 0 ${w} ${R}`
+    +pzJig({x:w,y:R},{x:w,y:h-R},e[1])+` Q ${w} ${h} ${w-R} ${h}`
+    +pzJig({x:w-R,y:h},{x:R,y:h},e[2])+` Q 0 ${h} 0 ${h-R}`
+    +pzJig({x:0,y:h-R},{x:0,y:R},e[3])+` Q 0 0 ${R} 0 Z`;
+}
+/* الأفقي (RTL): القطعة السابقة على اليمين والتالية على اليسار. العمودي: السابقة فوق والتالية تحت */
+function pzEdges(i,mode){
+  const prev=i===0?0:-1,next=i===4?0:1;
+  return mode==='h'?[0,prev,0,next]:[prev,0,next,0];
+}
+/* التفاف نص بلا قص: حتى ٣ أسطر، وإن زاد نوسّع عرض السطر */
+function pzWrap(str,maxc){
+  const words=String(str||'').split(/\s+/).filter(Boolean);
+  const run=m=>{const L=[];let cur='';words.forEach(w=>{if(cur&&(cur+' '+w).length>m){L.push(cur);cur=w}else cur=cur?cur+' '+w:w});if(cur)L.push(cur);return L};
+  let m=maxc,L=run(m);
+  while(L.length>3&&m<60){m+=2;L=run(m)}
+  return L;
+}
+/* o: {fill, value, label, empty, plain} */
+function pzPieceSVG(i,mode,o){
+  o=o||{};
+  const D=PZ_DIM[mode],w=D.w,h=D.h,M=PZ.MG,H=mode==='h',hole=i>0;
+  let s=`<path class="shape" d="${pzPath(w,h,pzEdges(i,mode))}" fill="${o.empty?'#F1EFE7':(o.fill||'#eee')}"/>`;
+  if(!o.plain){
+    const chip=(x,y,label,muted)=>{
+      const bw=Math.max(54,label.length*7.2+22);
+      return `<rect x="${(x-bw/2).toFixed(1)}" y="${y-12}" width="${bw.toFixed(1)}" height="24" rx="12" fill="rgba(255,255,255,${muted?.7:.92})" stroke="var(--gold2)"/>`
+        +`<text x="${x}" y="${y+4}" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="11" font-weight="700" fill="${muted?'#7E8F8C':'#075059'}">${escXml(label)}</text>`;
+    };
+    let cx,cy,chipX,chipY,maxc;
+    if(H){cx=w/2-(hole?8:0);cy=h/2+10;chipX=cx;chipY=24;maxc=i===0?10:12}
+    else{cx=(w-90)/2;cy=h/2+(hole?10:0);chipX=w-52;chipY=cy;maxc=i===0?18:22}
+    if(o.label)s+=chip(chipX,chipY,o.label,o.empty);
+    if(o.empty){
+      s+=`<text x="${cx}" y="${cy+(H?10:8)}" text-anchor="middle" font-family="IBM Plex Sans Arabic" font-size="${H?30:24}" font-weight="700" fill="#C9C4B4">؟</text>`;
+    }else if(o.value){
+      const def=i===0;
+      const fs=H?(def?14.5:11.5):(def?16:13.5),lh=H?(def?21:17):(def?22:19);
+      const lines=pzWrap(o.value,maxc);
+      const y0=cy-((lines.length-1)*lh)/2+fs*.35;
+      lines.forEach((ln,k)=>{
+        s+=`<text x="${cx}" y="${(y0+k*lh).toFixed(1)}" text-anchor="middle" font-family="${def?'Aref Ruqaa':'IBM Plex Sans Arabic'}" font-size="${fs}" font-weight="${def?700:500}" fill="${def?'#08363C':'#1F3D43'}">${escXml(ln)}</text>`;
+      });
+    }
+  }
+  return `<svg width="${w+2*M}" height="${h+2*M}" viewBox="${-M} ${-M} ${w+2*M} ${h+2*M}" aria-hidden="true">${s}</svg>`;
+}
+/* شريط زخرفي بلا نص — لا يكشف الحل في بطاقة السلسلة */
+function pzStrip(b){
+  const D=PZ_DIM.h,W=5*D.w,M=PZ.MG;
+  let s=`<svg viewBox="${-M} ${-M} ${W+2*M} ${D.h+2*M}" aria-hidden="true">`;
+  for(let i=0;i<5;i++){
+    s+=`<g transform="translate(${(4-i)*D.w} 0)"><path d="${pzPath(D.w,D.h,pzEdges(i,'h'))}" fill="${b.colors[i]}" stroke="rgba(0,0,0,.14)" stroke-width="1.3"/></g>`;
+  }
+  return s+'</svg>';
+}
+function shuffleArr(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+
+/* ── بطاقات السلاسل ── */
+function initPzCards(){
+  $('#pzCards').innerHTML=BOARDS.map((b,i)=>`
+    <div class="pzcard ${b.cls}" data-b="${b.key}">
+      <div class="pzc-h"><div class="b-ic"><i data-lucide="${b.icon}"></i></div>
+      <div><div class="btag">سلسلة بازل ${n(i+1)} من ${n(BOARDS.length)}</div><h3>${b.title}</h3></div></div>
+      <span class="datechip">${b.date}</span>
+      ${b.cd?`<div data-cd="${b.cd}"></div>`:''}
+      <div class="pzdesc">${b.desc}</div>
+      <div class="pzmini">${pzStrip(b)}</div>
+      <div class="pzchain">${b.labels.map(l=>`<span>${l}</span>`).join('')}</div>
+      <div class="pzfoot">
+        <span class="pzdonechip" data-done="${b.key}"><i data-lucide="badge-check"></i> <span></span></span>
+        <button class="btn" data-play="${b.key}" type="button"><i data-lucide="puzzle"></i> ركّبي السلسلة</button>
+      </div>
+    </div>`).join('');
+  icons();refreshBadges();tickCDs();
+}
+function refreshBadges(){
+  const u=curUser();
+  BOARDS.forEach(b=>{
+    const el=document.querySelector(`[data-done="${b.key}"]`);if(!el)return;
+    if(!u){el.style.display='none';return}
+    const c=entries.filter(e=>e.type==='puzzle'&&e.username===u.username&&e.meta&&e.meta.board===b.key).length;
+    el.style.display=c?'inline-flex':'none';
+    if(c)el.querySelector('span').textContent='أتممتِ هذه السلسلة '+cntWord(c);
+  });
+}
+$('#pzCards').addEventListener('click',e=>{
+  const btn=e.target.closest('[data-play]');
+  if(btn)openPuzzle(btn.dataset.play);
+});
+
+/* ── حالة اللعبة ──
+   placed[i]=true يعني أن القطعة i رُكّبت في خانتها i (لا يُسمح إلا بالتركيب الصحيح) */
+let pz=null;
+const pzMode=()=>{const st=$('#pzStage');return ((st&&st.clientWidth)||window.innerWidth)>=740?'h':'v'};
+function pzNewRound(){
+  let o;do{o=shuffleArr([0,1,2,3,4])}while(o.every((v,i)=>v===i));
+  pz.order=o;pz.placed=[false,false,false,false,false];pz.sel=null;
+  pz.moves=0;pz.mistakes=0;pz.hints=0;pz.assisted=false;pz.t0=Date.now();
+  clearInterval(pz.timer);
+  pz.timer=setInterval(()=>{$('#pzTime').textContent=n(Math.floor((Date.now()-pz.t0)/1000))},500);
+  $('#pzWin').classList.add('hidden');
+  pzRender();pzStats();pzReadLine();
+}
+function openPuzzle(key){
+  const b=BOARDS.find(x=>x.key===key);if(!b)return;
+  if(pz)clearInterval(pz.timer);
+  pz={board:b,mode:'h',placed:[],order:[],sel:null,moves:0,mistakes:0,hints:0,assisted:false,t0:0,timer:null,entry:null};
+  $('#pzTitle').textContent=b.title;
+  $('#pzCd').innerHTML=b.cd?`<div data-cd="${b.cd}"></div>`:'';
+  openOvl($('#pzOvl'));
+  pzNewRound();tickCDs();icons();
+}
+function pzClose(){
+  if(pz){clearInterval(pz.timer)}
+  closeOvl($('#pzOvl'));
+}
+function pzRender(){
+  if(!pz)return;
+  pz.mode=pzMode();
+  const mode=pz.mode,D=PZ_DIM[mode],b=pz.board,stage=$('#pzStage');
+  stage.className='pz2-stage '+(mode==='h'?'is-h':'is-v');
+  stage.style.setProperty('--pw',D.w+'px');stage.style.setProperty('--ph',D.h+'px');
+  const board=$('#pzBoard');board.innerHTML='';
+  for(let s=0;s<5;s++){
+    const el=document.createElement('div');
+    el.dataset.slot=s;
+    if(pz.placed[s]){
+      el.className='pz2-slot filled';
+      el.innerHTML=pzPieceSVG(s,mode,{fill:b.colors[s],value:b.chain[s],label:b.labels[s]});
+    }else{
+      el.className='pz2-slot';el.tabIndex=0;el.setAttribute('role','button');
+      el.setAttribute('aria-label','خانة '+b.labels[s]);
+      el.innerHTML=pzPieceSVG(s,mode,{empty:true,label:b.labels[s]});
+    }
+    board.appendChild(el);
+  }
+  const tray=$('#pzTray');tray.innerHTML='';
+  pz.order.forEach(id=>{
+    if(pz.placed[id])return;
+    const p=document.createElement('div');
+    p.className='pz2-piece'+(pz.sel===id?' sel':'');p.dataset.id=id;p.tabIndex=0;
+    p.setAttribute('role','button');p.setAttribute('aria-label',b.chain[id]);
+    p.innerHTML=pzPieceSVG(id,mode,{fill:b.colors[id],value:b.chain[id]});
+    tray.appendChild(p);
+  });
+  const left=2-pz.hints;
+  $('#pzHintN').textContent=n(Math.max(0,left));
+  $('#pzHint').disabled=left<=0;
+}
+function pzStats(){
+  $('#pzMist').textContent=n(pz.mistakes);
+  $('#pzDone').textContent=n(pz.placed.filter(Boolean).length)+'/٥';
+}
+function pzReadLine(){
+  const b=pz.board;
+  const parts=b.chain.map((c,i)=>pz.placed[i]?`<b>${esc(b.labels[i])}:</b> ${esc(c)}`:null).filter(Boolean);
+  $('#pzRead').innerHTML=parts.length?parts.join(' ← '):'اقرئي القطع وركّبيها… وستظهر هنا السلسلة وهي تتشكّل.';
+}
+function pzSelect(id){
+  pz.sel=(pz.sel===id)?null:id;
+  $$('#pzTray .pz2-piece').forEach(x=>x.classList.toggle('sel',pz.sel!==null&&+x.dataset.id===pz.sel));
+}
+function pzPlace(id){
+  pz.placed[id]=true;pz.sel=null;
+  pzRender();pzStats();pzReadLine();
+  if(pz.placed.every(Boolean))setTimeout(pzFinish,500);
+}
+function pzTry(id,slot,el){
+  pz.moves++;
+  if(id===slot){pzPlace(id);return}
+  pz.mistakes++;pzStats();
+  if(el){el.classList.add('shake');setTimeout(()=>el.classList.remove('shake'),400)}
+  toast('ليست هذه الخانة — أعيدي قراءة القطعة وفكّري في دورها');
+}
+async function pzFinish(){
+  if(!pz)return;
+  clearInterval(pz.timer);
+  const b=pz.board,u=curUser(),t=Math.max(1,Math.floor((Date.now()-pz.t0)/1000));
+  let pts=0,e=null;
+  if(!pz.assisted&&u){
+    const first=!entries.some(x=>x.type==='puzzle'&&x.username===u.username&&x.meta&&x.meta.board===b.key);
+    pts=first?Math.max(3,10-pz.hints*3-Math.max(0,pz.mistakes-2)):0;
+    e=await addEntry('puzzle','أتممت سلسلة: '+b.title,{board:b.key,boardName:b.title,moves:pz.moves,mistakes:pz.mistakes,hints:pz.hints,time:t,pts});
+  }
+  if(!pz)return;
+  pz.entry=e;
+  if(!pz.assisted&&!e){$('#pzWinT').textContent='اكتملت السلسلة، لكن لم تُحفظ النتيجة. أعيدي المحاولة.';$('#pzWin').classList.remove('hidden');return}
+  const seq='<ul class="pz2-seq">'+b.chain.map((c,i)=>`<li><b>${esc(b.labels[i])}:</b> ${esc(c)}</li>`).join('')+'</ul>';
+  let msg;
+  if(pz.assisted)msg='تركيب تلقائي (تجربة الإدارة) — لم يُسجَّل شيء.';
+  else if(pts>0)msg=`أخطاء: ${n(pz.mistakes)} • تلميحات: ${n(pz.hints)} • الزمن: ${n(t)} ثانية — <b>+${n(pts)} نقاط</b> حُفظت باسمك.`;
+  else msg=`أخطاء: ${n(pz.mistakes)} • الزمن: ${n(t)} ثانية — النقاط تُمنح مرة واحدة لكل سلسلة، وقد حصلتِ عليها سابقًا.`;
+  $('#pzWinT').innerHTML=seq+'<p style="margin-top:10px">'+msg+'</p>';
+  $('#pzReceipt').classList.toggle('hidden',!e);
+  $('#pzWin').classList.remove('hidden');icons();
+  $('#pzWin').scrollIntoView({behavior:'smooth',block:'nearest'});
+  toast(pts>0?'اكتملت السلسلة +'+n(pts)+' نقاط':'اكتملت السلسلة');
+}
+
+/* ── السحب والإفلات (الضغط ثم الضغط على الخانة يعمل أيضًا، وكذلك لوحة المفاتيح) ── */
+const pzSlotAt=(x,y)=>{const el=document.elementFromPoint(x,y);return el&&el.closest?el.closest('#pzBoard .pz2-slot'):null};
+document.addEventListener('pointerdown',e=>{
+  if(!pz||$('#pzOvl').classList.contains('hidden')||(e.button&&e.button>0))return;
+  const p=e.target.closest&&e.target.closest('#pzTray .pz2-piece');
+  if(!p)return;
+  e.preventDefault();
+  const r=p.getBoundingClientRect();
+  const d={id:+p.dataset.id,sx:e.clientX,sy:e.clientY,dx:e.clientX-r.left,dy:e.clientY-r.top,w:r.width,h:r.height,g:null};
+  const cleanup=()=>{
+    document.removeEventListener('pointermove',mv);
+    document.removeEventListener('pointerup',up);
+    document.removeEventListener('pointercancel',cleanup);
+    if(d.g)d.g.remove();
+    p.style.opacity='';
+    $$('#pzBoard .pz2-slot').forEach(x=>x.classList.remove('over'));
+  };
+  const mv=ev=>{
+    if(!d.g){
+      if(Math.hypot(ev.clientX-d.sx,ev.clientY-d.sy)<8)return;
+      d.g=p.cloneNode(true);
+      d.g.classList.add('ghost');d.g.classList.remove('sel');
+      d.g.style.width=d.w+'px';d.g.style.height=d.h+'px';
+      document.body.appendChild(d.g);p.style.opacity='.25';
+    }
+    d.g.style.left=(ev.clientX-d.dx)+'px';d.g.style.top=(ev.clientY-d.dy)+'px';
+    const s=pzSlotAt(ev.clientX,ev.clientY);
+    $$('#pzBoard .pz2-slot').forEach(x=>x.classList.toggle('over',x===s&&!x.classList.contains('filled')));
+  };
+  const up=ev=>{
+    const dragged=!!d.g,s=dragged?pzSlotAt(ev.clientX,ev.clientY):null;
+    cleanup();
+    if(!pz)return;
+    if(!dragged){pzSelect(d.id);return}
+    if(s&&!s.classList.contains('filled'))pzTry(d.id,+s.dataset.slot,s);
+  };
+  document.addEventListener('pointermove',mv);
+  document.addEventListener('pointerup',up);
+  document.addEventListener('pointercancel',cleanup);
+});
+$('#pzBoard').addEventListener('click',e=>{
+  if(!pz)return;
+  const s=e.target.closest('.pz2-slot:not(.filled)');if(!s)return;
+  if(pz.sel===null){toast('اختاري قطعة من الأسفل أولًا');return}
+  pzTry(pz.sel,+s.dataset.slot,s);
+});
+document.addEventListener('keydown',e=>{
+  if(!pz||$('#pzOvl').classList.contains('hidden'))return;
+  if(e.key==='Escape'){pzClose();return}
+  if(e.key!=='Enter'&&e.key!==' ')return;
+  const p=e.target.closest&&e.target.closest('#pzTray .pz2-piece');
+  if(p){e.preventDefault();pzSelect(+p.dataset.id);return}
+  const s=e.target.closest&&e.target.closest('#pzBoard .pz2-slot:not(.filled)');
+  if(s){e.preventDefault();if(pz.sel===null)toast('اختاري قطعة من الأسفل أولًا');else pzTry(pz.sel,+s.dataset.slot,s)}
+});
+window.addEventListener('resize',()=>{if(pz&&!$('#pzOvl').classList.contains('hidden')&&pzMode()!==pz.mode)pzRender()});
+
+/* ── الأزرار ── */
+$('#pzClose').onclick=pzClose;
+$('#pzDone2').onclick=pzClose;
+$('#pzOvl').addEventListener('click',e=>{if(e.target.id==='pzOvl')pzClose()});
+$('#pzShuffle').onclick=()=>{if(pz)pzNewRound()};
+$('#pzAgain').onclick=()=>{if(pz)pzNewRound()};
+$('#pzReceipt').onclick=()=>{if(pz&&pz.entry)showReceipt(pz.entry,false)};
+$('#pzHint').onclick=()=>{
+  if(!pz||pz.hints>=2)return;
+  const s=pz.placed.findIndex(v=>!v);if(s<0)return;
+  pz.hints++;pz.moves++;
+  toast('تلميح: هذه قطعة «'+pz.board.labels[s]+'» — وُضعت في مكانها');
+  pzPlace(s);
+};
+/* للإدارة فقط (الزر مخفي عن المعلمات) — لا يُسجَّل ولا يمنح نقاطًا */
+$('#pzAuto').onclick=()=>{
+  if(!pz||!document.body.classList.contains('is-admin'))return;
+  pz.assisted=true;
+  for(let s=0;s<5;s++)pz.placed[s]=true;
+  pzRender();pzStats();pzReadLine();setTimeout(pzFinish,300);
+};
+
+/* ══ الدخول — مع الحفظ التلقائي للبيانات إن اخترتِ المعلمة ذلك ══ */
+ $('#tabLogin').onclick=()=>{$('#tabLogin').classList.add('on');$('#tabReg').classList.remove('on');$('#formLogin').classList.remove('hidden');$('#formReg').classList.add('hidden')};
+ $('#tabReg').onclick=()=>{$('#tabReg').classList.add('on');$('#tabLogin').classList.remove('on');$('#formReg').classList.remove('hidden');$('#formLogin').classList.add('hidden')};
+
+function authErrMsg(code){
+  if(code==='auth/email-already-in-use')return'اسم المستخدم مستخدم مسبقًا — اختاري اسمًا آخر.';
+  if(code==='auth/wrong-password'||code==='auth/invalid-credential')return'اسم المستخدم أو كلمة المرور غير صحيحة.';
+  if(code==='auth/user-not-found')return'اسم المستخدم أو كلمة المرور غير صحيحة.';
+  if(code==='auth/weak-password')return'كلمة المرور ضعيفة — ٦ أحرف على الأقل.';
+  if(code==='auth/too-many-requests')return'محاولات كثيرة — انتظري قليلًا ثم أعيدي المحاولة.';
+  if(code==='auth/network-request-failed')return'تعذر الاتصال بالشبكة — تأكدي من الإنترنت.';
+  return'حدث خطأ — أعيدي المحاولة.';
+}
+ $('#formLogin').addEventListener('submit',async e=>{
+ e.preventDefault();const btn=$('#liBtn'),err=$('#liErr');btn.disabled=true;
+ try{const email=$('#liUser').value.trim().toLowerCase();if(!email.includes('@'))throw new Error('استخدمي البريد الإلكتروني المسجل؛ اسم admin وحده لا يكفي.');
+ const data=await cloud().login(email,$('#liPass').value);adoptCloud(data);storeCred(email,'',$('#liSave').checked);$('#liPass').value='';err.textContent='';enterApp();toast('حياكِ الله '+curUser().name)}
+ catch(ex){err.textContent=ex.message||'تعذر تسجيل الدخول'}finally{btn.disabled=false}
+ });
+ $('#formReg').addEventListener('submit',async e=>{
+ e.preventDefault();const err=$('#rgErr'),btn=e.target.querySelector('button');
+ const nm=$('#rgName').value.trim(),un=$('#rgUser').value.trim().toLowerCase(),email=$('#rgEmail').value.trim(),pw=$('#rgPass').value;
+ if(nm.length<3||!/^[a-z0-9._-]{3,40}$/.test(un)){err.textContent='أدخلي الاسم واسم المستخدم بشكل صحيح.';return}
+ {const pp=cloud().passwordProblem(pw);if(pp){err.textContent=pp;return}}
+ btn.disabled=true;
+ try{const data=await cloud().register(nm,un,email,pw);storeCred(email,'',$('#rgSave').checked);$('#rgPass').value='';
+ if(data.confirmation){err.textContent='أُرسل رابط تأكيد إلى بريدك؛ افتحيه ثم سجّلي الدخول.';return}
+ adoptCloud(data);err.textContent='';enterApp();toast('أهلًا بكِ '+nm)}catch(ex){err.textContent=ex.message}finally{btn.disabled=false}
+ });
+ $('#btnOut').addEventListener('click',async()=>{
+ if(!confirm('تسجيل الخروج؟ ستبقى أعمالك ونقاطك محفوظة.'))return;
+ try{await cloud().logout();session=null;myUid=null;entries=[];users=[];document.body.classList.remove('is-admin');location.reload()}
+ catch(e){toast('تعذر تسجيل الخروج: '+e.message)}
+ });
+ $('#forgotPass').addEventListener('click',async()=>{
+ const email=$('#liUser').value.trim();if(!email.includes('@')){$('#liErr').textContent='اكتبي بريدك الإلكتروني أولًا';return}
+ try{await cloud().forgot(email);$('#liErr').textContent='أُرسل رابط استعادة كلمة المرور إلى بريدك'}catch(e){$('#liErr').textContent=e.message}
+ });
+
+ $('#btnDash').addEventListener('click',showAdminView);
+ $('#aBack').addEventListener('click',()=>{$('#admin').classList.add('hidden');$('#site').classList.remove('hidden');window.scrollTo(0,0)});
+function enterApp(){
+  const u=curUser();if(!u)return;
+  $('#auth').classList.add('hidden');$('#site').classList.remove('hidden');$('#admin').classList.add('hidden');
+  document.body.classList.toggle('is-admin',u.role==='admin');
+  $('#chipAv').textContent=u.name.trim().charAt(0);
+  $('#chipName').textContent=u.name;
+  $('#chipRole').textContent=u.role==='admin'?'مديرة الموقع':'معلمة';
+  $('#btnDash').classList.toggle('hidden',u.role!=='admin');
+  updateCounts();applyQuizPrefill();tickCDs();refreshBadges();updateTopInfo();icons();window.scrollTo(0,0);
+}
+function syncUI(){
+  renderWelcome();updateCounts();renderVideos();tickCDs();refreshBadges();updateTopInfo();
+  renderAdminIfOpen();icons();
+}
+
+let fType='all',fUser='all',fQ='';
+function filtered(){
+  return entries.filter(e=>
+    (fType==='all'||e.type===fType)&&
+    (fUser==='all'||e.username===fUser)&&
+    (!fQ||(e.text+' '+detailsOf(e)+' '+e.name).includes(fQ))
+  ).sort((a,b)=>b.ts-a.ts);
+}
+function fillFilters(){
+  const teachers=users.filter(u=>u.role!=='admin');
+  $('#fType').innerHTML='<option value="all">كل الأقسام</option>'+Object.keys(TYPES).map(k=>`<option value="${k}" ${fType===k?'selected':''}>${TYPES[k]}</option>`).join('');
+  $('#fUser').innerHTML='<option value="all">كل المعلمات</option>'+teachers.map(u=>`<option value="${esc(u.username)}" ${fUser===u.username?'selected':''}>${esc(u.name)}</option>`).join('');
+}
+function renderAdmin(){
+  const teachers=users.filter(u=>u.role!=='admin');
+  const quizN=entries.filter(e=>e.type.startsWith('quiz')).length;
+  const cardsN=entries.filter(e=>e.type.startsWith('q_')).length;
+  const attN=entries.reduce((s,e)=>s+attsOf(e).length,0);
+  const pzN=countType('puzzle');
+  const totalPts=teachers.reduce((s,u)=>s+pointsOf(u.username),0);
+  $('#aStats').innerHTML=
+    `<div class="stat"><b>${n(teachers.length)}</b><span>المعلمات المسجلات</span></div>
+     <div class="stat"><b>${n(entries.length)}</b><span>إجمالي المشاركات</span></div>
+     <div class="stat"><b>${n(pzN)}</b><span>سلاسل بازل مكتملة</span></div>
+     <div class="stat"><b>${n(totalPts)}</b><span>إجمالي النقاط</span></div>
+     <div class="stat"><b>${n(quizN)}</b><span>إجابات أسئلة التدريب</span></div>
+     <div class="stat"><b>${n(attN)}</b><span>مرفقات (صور/ملفات/صوت)</span></div>`;
+  $('#aUsers').innerHTML=teachers.length?teachers.slice().sort((a,b)=>a.ts-b.ts).map(u=>{
+    const c=entries.filter(e=>e.username===u.username).length;
+    return `<div class="urow" data-u="${esc(u.username)}">
+      <div><div class="tname">${esc(u.name)}</div>
+      <div class="tuser">@${esc(u.username)} • نقاط ${n(pointsOf(u.username))} • أيام مكتملة ${n(boardsDone(u.username))}/٦ • مشاركات ${c===0?'—':n(c)}</div><div class="tuser">آخر دخول: ${u.lastLogin?fmtT(u.lastLogin):'—'} • آخر خروج: ${u.lastLogout?fmtT(u.lastLogout):'—'}</div></div>
+      <span class="uc">${n(pointsOf(u.username))} نقطة</span></div>`;
+  }).join(''):'<div class="tuser" style="padding:10px 0">لم تسجل أي معلمة بعد.</div>';
+  const max=Math.max(1,...Object.keys(TYPES).map(countType));
+  $('#aBars').innerHTML=Object.keys(TYPES).map(k=>{
+    const c=countType(k);
+    return `<div class="kb"><div class="kbl" title="${TYPES[k]}">${TYPES[k]}</div><div class="track"><i style="width:${(c/max*100).toFixed(1)}%"></i></div><b>${n(c)}</b></div>`;
+  }).join('');
+  fillFilters();
+  const rows=filtered();
+  $('#aRows').innerHTML=rows.map(e=>{
+    const isQ=e.type.startsWith('quiz'),a=attsOf(e);
+    return `<tr>
+      <td><div class="tname">${esc(e.name)}</div><div class="tuser">@${esc(e.username)}</div></td>
+      <td><span class="tchip">${esc(TYPES[e.type]||e.type)}</span></td>
+      <td class="txt">${isQ?`اختيارها: (<b>${esc(e.meta.choice)}</b>) ${e.meta.correct?'<span class="good">صحيحة</span>':'<span class="bad">غير صحيحة</span>'}`:esc(e.text)}</td>
+      <td class="txt muttd">${esc(detailsOf(e))||'—'}</td>
+      <td>${a.length?`<button class="del view" data-att="${e.id}" type="button">عرض (${n(a.length)})</button>`:'<span class="tuser">—</span>'}</td>
+      <td class="tuser" style="white-space:nowrap">${fmtT(e.ts)}</td>
+      <td><button class="del" data-id="${e.id}" type="button">حذف</button></td></tr>`;
+  }).join('');
+  $('#aEmpty').classList.toggle('hidden',rows.length>0);
+  $('#aCount').textContent='معروض: '+n(rows.length)+' من '+n(entries.length)+' مشاركة';
+  updateCloudChip();
+  icons();
+}
+ $('#aUsers').addEventListener('click',e=>{
+  const r=e.target.closest('.urow');if(!r)return;
+  fUser=r.dataset.u;renderAdmin();
+  const tbl=document.querySelector('.tblwrap');if(tbl)tbl.scrollIntoView({behavior:'smooth',block:'start'});
+});
+ $('#fType').addEventListener('change',e=>{fType=e.target.value;renderAdmin()});
+ $('#fUser').addEventListener('change',e=>{fUser=e.target.value;renderAdmin()});
+ $('#fQ').addEventListener('input',e=>{fQ=e.target.value.trim();renderAdmin()});
+ $('#aReset').addEventListener('click',()=>{fType='all';fUser='all';fQ='';$('#fQ').value='';renderAdmin()});
+ $('#aRows').addEventListener('click',e=>{
+  const av=e.target.closest('[data-att]');
+  if(av){const en=entries.find(x=>x.id===av.dataset.att);if(en){openAtts(en);return}}
+  const b=e.target.closest('.del[data-id]');if(!b)return;
+  if(!b.dataset.arm){b.dataset.arm='1';b.classList.add('arm');b.textContent='تأكيد الحذف؟';
+    setTimeout(()=>{if(b.isConnected){b.dataset.arm='';b.classList.remove('arm');b.textContent='حذف'}},3200);
+  }else{
+    deleteEntry(b.dataset.id);
+  }
+});
+function showAdminView(){if(curUser()?.role!=='admin'){toast('ليس لديك صلاحية الإدارة');return}$('#site').classList.add('hidden');$('#admin').classList.remove('hidden');renderAdmin();window.scrollTo(0,0)}
+function openAtts(e){
+  $('#attWho').textContent='مشاركة '+e.name+' — '+(TYPES[e.type]||'');
+  const a=attsOf(e);
+  $('#attBody').innerHTML=a.length?a.map(x=>{
+    if(x.type==='image')return `<figure><img src="${esc(x.data)}" alt="${esc(x.name)}" loading="lazy"><figcaption>${esc(x.name)} · ${kb(x.size)} — اضغطي الصورة لتكبيرها</figcaption></figure>`;
+    if(x.type==='audio')return `<div class="attaudio"><div class="attname"><i data-lucide="audio-lines"></i>${esc(x.name)} · ${kb(x.size)}</div><audio controls src="${esc(x.data)}"></audio></div>`;
+    return `<div class="attfile"><i data-lucide="file" style="width:18px;height:18px;color:var(--gold)"></i><span>${esc(x.name)} · ${kb(x.size)}</span><a class="btn-line" href="${esc(x.data)}" download="${esc(x.name)}">تنزيل</a></div>`;
+  }).join(''):'<div class="aempty">لا مرفقات.</div>';
+  icons();openOvl($('#attOvl'));
+}
+ $('#attClose').onclick=()=>closeOvl($('#attOvl'));
+ $('#attOvl').addEventListener('click',e=>{
+  if(e.target.id==='attOvl')closeOvl($('#attOvl'));
+  if(e.target.tagName==='IMG')e.target.classList.toggle('big');
+});
+ $('#aiFill').onclick=()=>{const rows=filtered().slice(0,150);if(!rows.length){toast('لا توجد مشاركات معروضة');return}
+ $('#aiIn').value=rows.map(e=>`المعلمة: ${e.name} | القسم: ${TYPES[e.type]||e.type} | التفاصيل: ${detailsOf(e)||'—'} | المشاركة: ${e.text}`).join('\n')};
+ $('#aiGo').onclick=async()=>{const t=$('#aiIn').value.trim(),err=$('#aiErr'),out=$('#aiOut'),b=$('#aiGo');
+ if(t.length<10){err.textContent='أدخلي تفاصيل كافية للمراجعة';return}
+ b.disabled=true;err.textContent='جارٍ التحليل…';out.textContent='';
+ try{out.textContent=await cloud().summarize(t);err.textContent=''}catch(e){err.textContent=e.message}finally{b.disabled=false}};
+ $('#apSave').onclick=async()=>{
+ const err=$('#apErr');try{await cloud().password($('#apCur').value,$('#apNew').value);$('#apCur').value='';$('#apNew').value='';err.textContent='';toast('حُدّثت كلمة المرور')}catch(e){err.textContent=e.message}
+ };
+
+function attNames(e){return attsOf(e).map(a=>a.name).join('؛ ')}
+ $('#aCsv').addEventListener('click',()=>{
+  const rows=filtered();
+  if(!rows.length){toast('لا توجد مشاركات للتصدير');return}
+  const head=['المعلمة','اسم المستخدم','القسم','التفاصيل','المشاركة','المرفقات','التاريخ'];
+  const lines=[head].concat(rows.map(e=>[e.name,e.username,TYPES[e.type]||e.type,detailsOf(e),e.text,attNames(e),fmtT(e.ts)]));
+  const csv='\uFEFF'+lines.map(r=>r.map(c=>'"'+String(c==null?'':c).replace(/"/g,'""')+'"').join(',')).join('\r\n');
+  dl(new Blob([csv],{type:'text/csv;charset=utf-8'}),'مشاركات-الثقافة-المؤسسية.csv');
+  toast('صُدّرت '+n(rows.length)+' مشاركة بنجاح');
+});
+ $('#aBak').addEventListener('click',()=>{
+  dl(new Blob([JSON.stringify({users,entries,welcome,videos,exported:Date.now()},null,2)],{type:'application/json'}),'نسخة-احتياطية-الثقافة-المؤسسية.json');
+  toast('نُزّلت النسخة الاحتياطية — احتفظي بها في مكان آمن');
+});
+ $('#aRestore').addEventListener('change',async e=>{
+ const f=e.target.files[0];e.target.value='';if(!f)return;
+ try{const d=JSON.parse(await f.text());if(!Array.isArray(d.entries))throw new Error('نسخة غير صالحة');
+ const known=new Set(entries.map(x=>x.id));let added=0;
+ for(const x of d.entries){if(known.has(x.id))continue;const owner=users.find(u=>u.username===x.username);if(owner?.fid!==myUid)throw new Error('لا يمكن استعادة أعمال باسم حساب آخر؛ لم تُستورد أعماله.');await cloud().save(x);added++}
+ await refreshCloud();toast('استُعيدت '+n(added)+' مشاركة')}
+ catch(err){toast('تعذر الاستعادة: '+err.message)}
+ });
+
+let wipeArm=false;
+ $('#aWipe').addEventListener('click',async()=>{
+  const b=$('#aWipe');
+  if(!wipeArm){wipeArm=true;b.classList.add('arm');b.innerHTML='<i data-lucide="alert-triangle"></i> متأكدة؟ اضغطي مجددًا';icons();
+    setTimeout(()=>{wipeArm=false;b.classList.remove('arm');b.innerHTML='<i data-lucide="trash-2"></i> مسح المشاركات';icons()},4000);
+  }else{
+    try{for(const e of entries)if(e.fid)await cloud().remove(e.fid)}catch(err){toast('تعذر المسح: '+err.message);await refreshCloud();return}
+    entries=[];saveAll();wipeArm=false;
+    b.classList.remove('arm');b.innerHTML='<i data-lucide="trash-2"></i> مسح المشاركات';icons();
+    renderAdmin();updateCounts();refreshBadges();updateTopInfo();toast('مُسحت جميع المشاركات');
+  }
+});
+ $('#aPrint').addEventListener('click',()=>{
+  const w=window.open('','_blank');
+  if(!w){toast('متصفحكِ منع فتح نافذة الطباعة');return}
+  const groups=Object.keys(TYPES).map(k=>({label:TYPES[k],items:entries.filter(e=>e.type===k).sort((a,b)=>a.ts-b.ts)})).filter(g=>g.items.length);
+  let body=`<h1>وزارة التعليم — الثقافة المؤسسية</h1><div class="sub">تقرير المشاركات — أُنشئ بتاريخ ${fmtT(Date.now())}</div>
+  <div class="sum">إجمالي المشاركات: ${n(entries.length)} • عدد المعلمات: ${n(users.filter(u=>u.role!=='admin').length)} • إجمالي النقاط: ${n(users.filter(u=>u.role!=='admin').reduce((s,u)=>s+pointsOf(u.username),0))}</div>`;
+  if(!groups.length)body+='<p>لا توجد مشاركات بعد.</p>';
+  groups.forEach(g=>{
+    body+=`<h3>${g.label} <span>(${n(g.items.length)})</span></h3><table><thead><tr><th>المعلمة</th><th>التفاصيل</th><th>المشاركة</th><th>التاريخ</th></tr></thead><tbody>`;
+    g.items.forEach(e=>{
+      const a=attsOf(e).length;
+      body+=`<tr><td>${esc(e.name)}</td><td class="d">${esc(detailsOf(e))||'—'}</td><td>${esc(e.text)}${a?`<span class="att"> — مرفقات (${n(a)}): ${esc(attNames(e))}</span>`:''}</td><td class="d">${fmtT(e.ts)}</td></tr>`});
+    body+='</tbody></table>';
+  });
+  body+=`<div class="sig">منسقة الثقافة المؤسسية<br>عواطف عبدالله محمد آل عبدالله</div>`;
+  w.document.write(`<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><title>تقرير المشاركات — الثقافة المؤسسية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>body{font-family:'IBM Plex Sans Arabic',sans-serif;color:#1C2B2E;padding:34px;max-width:900px;margin:auto;line-height:1.9}
+  h1{font-family:'Aref Ruqaa',serif;color:#075059;margin:0 0 4px}.sub{color:#777;font-size:13px;margin-bottom:16px}
+  .sum{background:#F5EFDC;border:1px solid #D9C89A;border-radius:10px;padding:10px 14px;font-size:13px;margin-bottom:20px}
+  h3{font-family:'Aref Ruqaa',serif;color:#0B7D8A;margin:24px 0 8px;font-size:20px}h3 span{color:#B08A2E;font-size:14px}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:8px}
+  th{text-align:right;border-bottom:2px solid #B08A2E;padding:7px 9px;color:#555;font-size:11.5px}
+  td{border-bottom:1px solid #DBE5E2;padding:8px 9px;vertical-align:top}.d{color:#777;white-space:nowrap;font-size:11.5px}
+  .att{color:#0B7D8A;font-size:11px}.sig{margin-top:34px;text-align:center;font-family:'Aref Ruqaa',serif;color:#B08A2E;font-size:20px;line-height:1.7}</style>
+  </head><body>${body}</body></html>`);
+  w.document.close();
+  setTimeout(()=>{try{w.focus();w.print()}catch(e){}},800);
+});
+function initReveal(){
+  if(!('IntersectionObserver' in window)){$$('.rv').forEach(x=>x.classList.add('in'));return}
+  const io=new IntersectionObserver(en=>en.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+  $$('.rv').forEach(x=>io.observe(x));
+}
+renderPlaques();
+renderQuiz();
+renderWelcome();
+renderVideos();
+initPzCards();
+initReel();
+initReveal();
+tickCDs();
+initCloud();
+updateCloudChip();
+fillSavedCred();   /* ← تعبئة بيانات الدخول المحفوظة قبل أي شيء */
+/* تستعاد الجلسة فقط بعد التحقق من الحساب في Cloud */
+icons();
+handleHash();
+</script>
+</body>
+</html>
